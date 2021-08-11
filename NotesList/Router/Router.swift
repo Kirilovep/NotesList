@@ -26,6 +26,8 @@ protocol Router: Presentable {
   func popModule(animated: Bool)
   func popModule(animated: Bool, hideBar: Bool)
 
+  func isPrefersLargeTitlesHidden(hidden: Bool)
+
   func dismissModule()
   func dismissModule(animated: Bool, completion: (() -> Void)?)
 

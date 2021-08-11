@@ -8,4 +8,6 @@
 import Foundation
 
 protocol NotesListViewModelOutput {
+    func onAddButtonTapped()
+    func showView() 
 }

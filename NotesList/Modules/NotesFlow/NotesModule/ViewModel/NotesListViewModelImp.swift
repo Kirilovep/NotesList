@@ -8,8 +8,19 @@
 import Foundation
 
 class NotesListViewModelImp: NotesListViewModel {
-    
+ 
     // MARK: - Properties -
     var output: NotesListViewModelOutput!
+}
 
+// MARK: - NotesListViewModelOutput -
+extension NotesListViewModelImp {
+
+    func addButtonTapped() {
+        output.onAddButtonTapped()
+    }
+    
+    func viewIsReady() {
+        output.showView()
+    }
 }

@@ -72,8 +72,8 @@ final class RouterImp: NSObject, Router {
         if let completion = completion {
             completions[controller] = completion
         }
-
-        rootController?.isNavigationBarHidden = hideBar
+        
+        rootController?.navigationBar.prefersLargeTitles = !hideBar
         rootController?.pushViewController(controller, animated: animated)
     }
 
@@ -135,6 +135,10 @@ final class RouterImp: NSObject, Router {
                 runCompletion(for: controller)
             }
         }
+    }
+    
+    func isPrefersLargeTitlesHidden(hidden: Bool) {
+        rootController?.navigationBar.prefersLargeTitles = !hidden
     }
 
     private func runCompletion(for controller: UIViewController) {

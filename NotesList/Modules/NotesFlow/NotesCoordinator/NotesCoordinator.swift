@@ -38,9 +38,31 @@ private extension NotesCoordinator {
         
         return notesView
     }
+    
+    func createAddNotesView() -> NotesAddViewController {
+        guard let addNotesView = resolver.resolve(NotesAddViewController.self, argument: self as NotesAddViewModelOutput) else {
+            fatalError("Couldn't create addNotesView")
+        }
+        
+        return addNotesView
+    }
 }
 
 // MARK: - NotesListViewModelOutput
 extension NotesCoordinator: NotesListViewModelOutput {
+
+    func showView() {
+        router.isPrefersLargeTitlesHidden(hidden: false)
+    }
+    
+    func onAddButtonTapped() {
+        let addNotesView = createAddNotesView()
+
+        router.push(addNotesView, hideBar: true)
+    }
+}
+
+// MARK: - NotesAddViewModelOutput
+extension NotesCoordinator: NotesAddViewModelOutput {
     
 }

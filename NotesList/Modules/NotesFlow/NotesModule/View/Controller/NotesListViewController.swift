@@ -21,6 +21,11 @@ class NotesListViewController: UIViewController, StoryboardLoadable {
         super.viewDidLoad()
         setupUI()
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewModel.viewIsReady()
+    }
 }
 
 // MARK: - UITableviewDataSource -
@@ -72,6 +77,6 @@ private extension NotesListViewController {
 private extension NotesListViewController {
 
     @objc func addTapped() {
-        
+        viewModel.addButtonTapped()
     }
 }

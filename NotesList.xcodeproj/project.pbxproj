@@ -20,6 +20,13 @@
 		A6EB183D26C45D1100336BC6 /* NotesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6EB183B26C45D1100336BC6 /* NotesTableViewCell.xib */; };
 		A6EB184426C45D7800336BC6 /* Extension+UITableVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB184326C45D7800336BC6 /* Extension+UITableVIew.swift */; };
 		A6EB184726C4639900336BC6 /* NotesCellViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB184626C4639900336BC6 /* NotesCellViewModelType.swift */; };
+		A6EB185126C4652800336BC6 /* NotesAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB185026C4652800336BC6 /* NotesAddViewController.swift */; };
+		A6EB185526C4653000336BC6 /* NotesAddViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6EB185426C4653000336BC6 /* NotesAddViewController.storyboard */; };
+		A6EB185826C4656B00336BC6 /* NotesAddAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB185726C4656B00336BC6 /* NotesAddAssemblyContainer.swift */; };
+		A6EB185B26C465A100336BC6 /* NotesAddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB185A26C465A100336BC6 /* NotesAddViewModel.swift */; };
+		A6EB185F26C465AB00336BC6 /* NotesAddViewModelImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB185E26C465AB00336BC6 /* NotesAddViewModelImp.swift */; };
+		A6EB186226C465B400336BC6 /* NotesAddViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB186126C465B400336BC6 /* NotesAddViewModelOutput.swift */; };
+		A6EB186526C46DAD00336BC6 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB186426C46DAD00336BC6 /* UIView.swift */; };
 		A878B4DF26C3B93500BD74B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B4DE26C3B93500BD74B0 /* AppDelegate.swift */; };
 		A878B4E126C3B93500BD74B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B4E026C3B93500BD74B0 /* SceneDelegate.swift */; };
 		A878B4E626C3B93500BD74B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A878B4E426C3B93500BD74B0 /* Main.storyboard */; };
@@ -82,6 +89,13 @@
 		A6EB183B26C45D1100336BC6 /* NotesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotesTableViewCell.xib; sourceTree = "<group>"; };
 		A6EB184326C45D7800336BC6 /* Extension+UITableVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableVIew.swift"; sourceTree = "<group>"; };
 		A6EB184626C4639900336BC6 /* NotesCellViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesCellViewModelType.swift; sourceTree = "<group>"; };
+		A6EB185026C4652800336BC6 /* NotesAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAddViewController.swift; sourceTree = "<group>"; };
+		A6EB185426C4653000336BC6 /* NotesAddViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NotesAddViewController.storyboard; sourceTree = "<group>"; };
+		A6EB185726C4656B00336BC6 /* NotesAddAssemblyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAddAssemblyContainer.swift; sourceTree = "<group>"; };
+		A6EB185A26C465A100336BC6 /* NotesAddViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAddViewModel.swift; sourceTree = "<group>"; };
+		A6EB185E26C465AB00336BC6 /* NotesAddViewModelImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAddViewModelImp.swift; sourceTree = "<group>"; };
+		A6EB186126C465B400336BC6 /* NotesAddViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAddViewModelOutput.swift; sourceTree = "<group>"; };
+		A6EB186426C46DAD00336BC6 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		A878B4DB26C3B93500BD74B0 /* NotesList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A878B4DE26C3B93500BD74B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A878B4E026C3B93500BD74B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -238,6 +252,67 @@
 			path = NotesTableViewCell;
 			sourceTree = "<group>";
 		};
+		A6EB184926C4650000336BC6 /* AddNotesModule */ = {
+			isa = PBXGroup;
+			children = (
+				A6EB184D26C4651000336BC6 /* Assembly */,
+				A6EB184C26C4650D00336BC6 /* View */,
+				A6EB184B26C4650900336BC6 /* Model */,
+				A6EB184A26C4650600336BC6 /* ViewModel */,
+			);
+			path = AddNotesModule;
+			sourceTree = "<group>";
+		};
+		A6EB184A26C4650600336BC6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A6EB185A26C465A100336BC6 /* NotesAddViewModel.swift */,
+				A6EB185E26C465AB00336BC6 /* NotesAddViewModelImp.swift */,
+				A6EB186126C465B400336BC6 /* NotesAddViewModelOutput.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A6EB184B26C4650900336BC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6EB184C26C4650D00336BC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6EB184F26C4651900336BC6 /* Storyboard */,
+				A6EB184E26C4651500336BC6 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6EB184D26C4651000336BC6 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				A6EB185726C4656B00336BC6 /* NotesAddAssemblyContainer.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		A6EB184E26C4651500336BC6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A6EB185026C4652800336BC6 /* NotesAddViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A6EB184F26C4651900336BC6 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A6EB185426C4653000336BC6 /* NotesAddViewController.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		A878B4D226C3B93500BD74B0 = {
 			isa = PBXGroup;
 			children = (
@@ -354,6 +429,7 @@
 		A878B51326C3C51900BD74B0 /* NotesFlow */ = {
 			isa = PBXGroup;
 			children = (
+				A6EB184926C4650000336BC6 /* AddNotesModule */,
 				A6EB183226C4579900336BC6 /* NotesCoordinator */,
 				A6EB180126C451C200336BC6 /* NotesModule */,
 			);
@@ -449,6 +525,7 @@
 				A878B53C26C3DAB700BD74B0 /* ValidationError.swift */,
 				A878B54B26C4012500BD74B0 /* ValidatorType.swift */,
 				A878B56D26C41CC900BD74B0 /* UserKeys.swift */,
+				A6EB186426C46DAD00336BC6 /* UIView.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -634,6 +711,7 @@
 				A878B51D26C3C61B00BD74B0 /* Localizable.strings in Resources */,
 				A6EB182626C453F100336BC6 /* NotesListViewController.storyboard in Resources */,
 				A878B4EB26C3B93600BD74B0 /* LaunchScreen.storyboard in Resources */,
+				A6EB185526C4653000336BC6 /* NotesAddViewController.storyboard in Resources */,
 				A878B52A26C3C7B000BD74B0 /* RegistrationViewController.storyboard in Resources */,
 				A878B4F426C3BFE300BD74B0 /* GoogleService-Info.plist in Resources */,
 				A878B4E826C3B93600BD74B0 /* Assets.xcassets in Resources */,
@@ -714,6 +792,7 @@
 				A878B51726C3C55D00BD74B0 /* Extensions+String.swift in Sources */,
 				A878B55E26C4039100BD74B0 /* LoginViewModel.swift in Sources */,
 				A878B56026C4039900BD74B0 /* LoginViewModelImp.swift in Sources */,
+				A6EB185B26C465A100336BC6 /* NotesAddViewModel.swift in Sources */,
 				A6EB183426C457A400336BC6 /* NotesCoordinator.swift in Sources */,
 				A878B54826C3E00500BD74B0 /* RegistrationServiceImp.swift in Sources */,
 				A878B56726C40B1E00BD74B0 /* LoginServiceAssemblyContainer.swift in Sources */,
@@ -742,7 +821,10 @@
 				A878B54626C3DFFD00BD74B0 /* RegistrationService.swift in Sources */,
 				A6EB184726C4639900336BC6 /* NotesCellViewModelType.swift in Sources */,
 				A878B55826C402BD00BD74B0 /* LoginViewController.swift in Sources */,
+				A6EB185826C4656B00336BC6 /* NotesAddAssemblyContainer.swift in Sources */,
 				A878B50A26C3C42F00BD74B0 /* ApplicationCoordinator.swift in Sources */,
+				A6EB186526C46DAD00336BC6 /* UIView.swift in Sources */,
+				A6EB186226C465B400336BC6 /* NotesAddViewModelOutput.swift in Sources */,
 				A878B51226C3C48700BD74B0 /* MainCoordinatorAssembly.swift in Sources */,
 				A878B4E126C3B93500BD74B0 /* SceneDelegate.swift in Sources */,
 				A878B53226C3C83500BD74B0 /* RegistrationViewModelOutput.swift in Sources */,
@@ -753,9 +835,11 @@
 				A878B54126C3DD1100BD74B0 /* UserRegistrationData.swift in Sources */,
 				A878B50C26C3C44E00BD74B0 /* ApplicationCoordinatorAssembly.swift in Sources */,
 				A878B50726C3C3F600BD74B0 /* RouterImp.swift in Sources */,
+				A6EB185F26C465AB00336BC6 /* NotesAddViewModelImp.swift in Sources */,
 				A878B52E26C3C7DF00BD74B0 /* RegistrationViewModel.swift in Sources */,
 				A6EB183826C457DE00336BC6 /* NotesCoordinatorAssemblyContainer.swift in Sources */,
 				A878B4FB26C3C38300BD74B0 /* BaseCoordinator.swift in Sources */,
+				A6EB185126C4652800336BC6 /* NotesAddViewController.swift in Sources */,
 				A878B53F26C3DBD300BD74B0 /* Extension+UITextField.swift in Sources */,
 				A878B50026C3C3AB00BD74B0 /* Presentable.swift in Sources */,
 				A6EB184426C45D7800336BC6 /* Extension+UITableVIew.swift in Sources */,
