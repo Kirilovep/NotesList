@@ -10,4 +10,5 @@ import Firebase
 protocol RegistrationViewModel {
     func registerUser(with email: String?, password: String?, completionHandler: @escaping (Result<AuthDataResult, Error>) -> Void)
     func userSuccessfullyRegistered()
+    func onCancelButtonTapped()
 }

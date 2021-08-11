@@ -43,6 +43,17 @@
 		A878B54826C3E00500BD74B0 /* RegistrationServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B54726C3E00500BD74B0 /* RegistrationServiceImp.swift */; };
 		A878B54A26C3E02F00BD74B0 /* RegistrationServiceAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B54926C3E02F00BD74B0 /* RegistrationServiceAssemblyContainer.swift */; };
 		A878B54C26C4012500BD74B0 /* ValidatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B54B26C4012500BD74B0 /* ValidatorType.swift */; };
+		A878B55626C402B000BD74B0 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A878B55526C402B000BD74B0 /* LoginViewController.storyboard */; };
+		A878B55826C402BD00BD74B0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B55726C402BD00BD74B0 /* LoginViewController.swift */; };
+		A878B55A26C4031D00BD74B0 /* LoginAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B55926C4031D00BD74B0 /* LoginAssemblyContainer.swift */; };
+		A878B55C26C4036900BD74B0 /* LoginViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B55B26C4036900BD74B0 /* LoginViewModelOutput.swift */; };
+		A878B55E26C4039100BD74B0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B55D26C4039100BD74B0 /* LoginViewModel.swift */; };
+		A878B56026C4039900BD74B0 /* LoginViewModelImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B55F26C4039900BD74B0 /* LoginViewModelImp.swift */; };
+		A878B56326C40AFA00BD74B0 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B56226C40AFA00BD74B0 /* LoginService.swift */; };
+		A878B56526C40B0500BD74B0 /* LoginServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B56426C40B0500BD74B0 /* LoginServiceImp.swift */; };
+		A878B56726C40B1E00BD74B0 /* LoginServiceAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B56626C40B1E00BD74B0 /* LoginServiceAssemblyContainer.swift */; };
+		A878B56A26C41BFD00BD74B0 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B56926C41BFD00BD74B0 /* UserDefaultsHelper.swift */; };
+		A878B56E26C41CC900BD74B0 /* UserKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B56D26C41CC900BD74B0 /* UserKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +98,17 @@
 		A878B54726C3E00500BD74B0 /* RegistrationServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationServiceImp.swift; sourceTree = "<group>"; };
 		A878B54926C3E02F00BD74B0 /* RegistrationServiceAssemblyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationServiceAssemblyContainer.swift; sourceTree = "<group>"; };
 		A878B54B26C4012500BD74B0 /* ValidatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorType.swift; sourceTree = "<group>"; };
+		A878B55526C402B000BD74B0 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		A878B55726C402BD00BD74B0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A878B55926C4031D00BD74B0 /* LoginAssemblyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAssemblyContainer.swift; sourceTree = "<group>"; };
+		A878B55B26C4036900BD74B0 /* LoginViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelOutput.swift; sourceTree = "<group>"; };
+		A878B55D26C4039100BD74B0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A878B55F26C4039900BD74B0 /* LoginViewModelImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelImp.swift; sourceTree = "<group>"; };
+		A878B56226C40AFA00BD74B0 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		A878B56426C40B0500BD74B0 /* LoginServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceImp.swift; sourceTree = "<group>"; };
+		A878B56626C40B1E00BD74B0 /* LoginServiceAssemblyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceAssemblyContainer.swift; sourceTree = "<group>"; };
+		A878B56926C41BFD00BD74B0 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		A878B56D26C41CC900BD74B0 /* UserKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserKeys.swift; sourceTree = "<group>"; };
 		E93AFEBCAC21E4BAE1E82D62 /* Pods-NotesList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotesList.release.xcconfig"; path = "Target Support Files/Pods-NotesList/Pods-NotesList.release.xcconfig"; sourceTree = "<group>"; };
 		FFC47C158A697C40665BF4FD /* Pods_NotesList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotesList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -132,6 +154,7 @@
 		A878B4DD26C3B93500BD74B0 /* NotesList */ = {
 			isa = PBXGroup;
 			children = (
+				A878B56826C41BF000BD74B0 /* Helpers */,
 				A878B53626C3D9FB00BD74B0 /* Services */,
 				A878B53326C3D7DC00BD74B0 /* Enums */,
 				A878B51A26C3C5CA00BD74B0 /* Localization */,
@@ -233,6 +256,7 @@
 		A878B51426C3C52000BD74B0 /* AuthFlow */ = {
 			isa = PBXGroup;
 			children = (
+				A878B54D26C4020B00BD74B0 /* LoginModule */,
 				A878B52126C3C75400BD74B0 /* RegistrationModule */,
 			);
 			path = AuthFlow;
@@ -271,7 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				A878B52626C3C78100BD74B0 /* Storyboard */,
-				A878B52726C3C7A100BD74B0 /* RegistrationViewController.swift */,
+				A878B54F26C4023000BD74B0 /* Controller */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -316,6 +340,7 @@
 				A878B53426C3D7EB00BD74B0 /* UIButton.swift */,
 				A878B53C26C3DAB700BD74B0 /* ValidationError.swift */,
 				A878B54B26C4012500BD74B0 /* ValidatorType.swift */,
+				A878B56D26C41CC900BD74B0 /* UserKeys.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -323,6 +348,7 @@
 		A878B53626C3D9FB00BD74B0 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A878B56126C40AF000BD74B0 /* LoginService */,
 				A878B54426C3DFE700BD74B0 /* RegistrationService */,
 				A878B53726C3D9FF00BD74B0 /* ValidatorService */,
 			);
@@ -346,6 +372,93 @@
 				A878B54926C3E02F00BD74B0 /* RegistrationServiceAssemblyContainer.swift */,
 			);
 			path = RegistrationService;
+			sourceTree = "<group>";
+		};
+		A878B54D26C4020B00BD74B0 /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				A878B55226C4024000BD74B0 /* View */,
+				A878B55126C4023D00BD74B0 /* Model */,
+				A878B55026C4023800BD74B0 /* ViewModel */,
+				A878B54E26C4021B00BD74B0 /* Assembly */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		A878B54E26C4021B00BD74B0 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				A878B55926C4031D00BD74B0 /* LoginAssemblyContainer.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		A878B54F26C4023000BD74B0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A878B52726C3C7A100BD74B0 /* RegistrationViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A878B55026C4023800BD74B0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A878B55B26C4036900BD74B0 /* LoginViewModelOutput.swift */,
+				A878B55D26C4039100BD74B0 /* LoginViewModel.swift */,
+				A878B55F26C4039900BD74B0 /* LoginViewModelImp.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A878B55126C4023D00BD74B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A878B55226C4024000BD74B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A878B55426C4029600BD74B0 /* Controller */,
+				A878B55326C4029100BD74B0 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A878B55326C4029100BD74B0 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A878B55526C402B000BD74B0 /* LoginViewController.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		A878B55426C4029600BD74B0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A878B55726C402BD00BD74B0 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A878B56126C40AF000BD74B0 /* LoginService */ = {
+			isa = PBXGroup;
+			children = (
+				A878B56226C40AFA00BD74B0 /* LoginService.swift */,
+				A878B56426C40B0500BD74B0 /* LoginServiceImp.swift */,
+				A878B56626C40B1E00BD74B0 /* LoginServiceAssemblyContainer.swift */,
+			);
+			path = LoginService;
+			sourceTree = "<group>";
+		};
+		A878B56826C41BF000BD74B0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A878B56926C41BFD00BD74B0 /* UserDefaultsHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		EB9293B5EDA3620C0E6F3700 /* Pods */ = {
@@ -423,6 +536,7 @@
 				A878B52A26C3C7B000BD74B0 /* RegistrationViewController.storyboard in Resources */,
 				A878B4F426C3BFE300BD74B0 /* GoogleService-Info.plist in Resources */,
 				A878B4E826C3B93600BD74B0 /* Assets.xcassets in Resources */,
+				A878B55626C402B000BD74B0 /* LoginViewController.storyboard in Resources */,
 				A878B4E626C3B93500BD74B0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,8 +608,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A878B55A26C4031D00BD74B0 /* LoginAssemblyContainer.swift in Sources */,
 				A878B51726C3C55D00BD74B0 /* Extensions+String.swift in Sources */,
+				A878B55E26C4039100BD74B0 /* LoginViewModel.swift in Sources */,
+				A878B56026C4039900BD74B0 /* LoginViewModelImp.swift in Sources */,
 				A878B54826C3E00500BD74B0 /* RegistrationServiceImp.swift in Sources */,
+				A878B56726C40B1E00BD74B0 /* LoginServiceAssemblyContainer.swift in Sources */,
 				A878B50526C3C3E900BD74B0 /* Router.swift in Sources */,
 				A878B51026C3C47300BD74B0 /* MainCoordinator.swift in Sources */,
 				A878B4DF26C3B93500BD74B0 /* AppDelegate.swift in Sources */,
@@ -504,18 +622,24 @@
 				A878B53526C3D7EB00BD74B0 /* UIButton.swift in Sources */,
 				A878B54C26C4012500BD74B0 /* ValidatorType.swift in Sources */,
 				A878B54A26C3E02F00BD74B0 /* RegistrationServiceAssemblyContainer.swift in Sources */,
+				A878B55C26C4036900BD74B0 /* LoginViewModelOutput.swift in Sources */,
 				A878B53D26C3DAB700BD74B0 /* ValidationError.swift in Sources */,
 				A878B54326C3DD5100BD74B0 /* Extension+UIViewController.swift in Sources */,
+				A878B56E26C41CC900BD74B0 /* UserKeys.swift in Sources */,
 				A878B50226C3C3C100BD74B0 /* StoryboardLoadable.swift in Sources */,
 				A878B52C26C3C7C900BD74B0 /* RegistrationAssemblyContainer.swift in Sources */,
 				A878B53926C3DA0B00BD74B0 /* ValidatorServiceImp.swift in Sources */,
 				A878B4FE26C3C39E00BD74B0 /* Coordinator.swift in Sources */,
 				A878B53B26C3DA1600BD74B0 /* ValidatorService.swift in Sources */,
 				A878B54626C3DFFD00BD74B0 /* RegistrationService.swift in Sources */,
+				A878B55826C402BD00BD74B0 /* LoginViewController.swift in Sources */,
 				A878B50A26C3C42F00BD74B0 /* ApplicationCoordinator.swift in Sources */,
 				A878B51226C3C48700BD74B0 /* MainCoordinatorAssembly.swift in Sources */,
 				A878B4E126C3B93500BD74B0 /* SceneDelegate.swift in Sources */,
 				A878B53226C3C83500BD74B0 /* RegistrationViewModelOutput.swift in Sources */,
+				A878B56A26C41BFD00BD74B0 /* UserDefaultsHelper.swift in Sources */,
+				A878B56326C40AFA00BD74B0 /* LoginService.swift in Sources */,
+				A878B56526C40B0500BD74B0 /* LoginServiceImp.swift in Sources */,
 				A878B54126C3DD1100BD74B0 /* UserRegistrationData.swift in Sources */,
 				A878B50C26C3C44E00BD74B0 /* ApplicationCoordinatorAssembly.swift in Sources */,
 				A878B50726C3C3F600BD74B0 /* RouterImp.swift in Sources */,

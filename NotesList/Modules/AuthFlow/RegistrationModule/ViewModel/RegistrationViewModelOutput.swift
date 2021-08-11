@@ -9,4 +9,5 @@ import Foundation
 
 protocol RegistrationViewModelOutput {
     func moveToMainFlow()
+    func popToLoginScreen()
 }

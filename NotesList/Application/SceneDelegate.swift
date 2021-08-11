@@ -7,17 +7,20 @@
 
 import UIKit
 import Swinject
+import Firebase
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     private let assembler = Assembler([ApplicationCoordinatorAssembly(),
                                         MainCoordinatorAssembly(),
                                         RegistrationAssemblyContainer(),
-                                        RegistrationServiceAssemblyContainer()])
+                                        RegistrationServiceAssemblyContainer(),
+                                        LoginAssemblyContainer(),
+                                        LoginServiceAssemblyContainer()])
     private let navigationController = UINavigationController()
     private var applicationCoordinator: ApplicationCoordinator!
     private var router: Router!
-
+ 
     var window: UIWindow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {

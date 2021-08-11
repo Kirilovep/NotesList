@@ -60,6 +60,15 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="RyF-FA-eSS">
                                 <rect key="frame" x="188.5" y="448" width="37" height="37"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGL-r1-Nli">
+                                <rect key="frame" x="366.5" y="69" width="17.5" height="22"/>
+                                <state key="normal" image="xmark" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
+                                </state>
+                                <connections>
+                                    <action selector="onCancelButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="h5V-R7-ZOC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -67,8 +76,10 @@
                             <constraint firstItem="RyF-FA-eSS" firstAttribute="centerX" secondItem="z4c-SB-nRj" secondAttribute="centerX" id="3Wa-Wt-zXu"/>
                             <constraint firstItem="WHh-AD-A7m" firstAttribute="trailing" secondItem="z4c-SB-nRj" secondAttribute="trailing" id="9s5-4R-xzG"/>
                             <constraint firstItem="z4c-SB-nRj" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="E6F-Au-kGK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="KGL-r1-Nli" secondAttribute="trailing" constant="30" id="EMc-qT-4fN"/>
                             <constraint firstItem="RyF-FA-eSS" firstAttribute="centerY" secondItem="z4c-SB-nRj" secondAttribute="centerY" multiplier="1.03" id="Knb-DI-Trt"/>
                             <constraint firstItem="z4c-SB-nRj" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.5" id="dFr-SV-Q1Q"/>
+                            <constraint firstItem="KGL-r1-Nli" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="25" id="dcw-EC-PJt"/>
                             <constraint firstItem="fhS-Mp-7go" firstAttribute="centerX" secondItem="z4c-SB-nRj" secondAttribute="centerX" id="ep6-Lw-I5N"/>
                             <constraint firstItem="z4c-SB-nRj" firstAttribute="top" secondItem="WHh-AD-A7m" secondAttribute="bottom" constant="33.5" id="h8c-CA-88u"/>
                             <constraint firstItem="fhS-Mp-7go" firstAttribute="top" secondItem="z4c-SB-nRj" secondAttribute="bottom" constant="24" id="oi8-Wg-NSv"/>
@@ -92,6 +103,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
