@@ -23,5 +23,24 @@ final class MainCoordinator: BaseCoordinator {
 private extension MainCoordinator {
 
     func showMainFlow() {
+        let registrationScreen = createRegistrationScreen()
+        
+        router.setRootModule(registrationScreen, hideBar: true)
+    }
+
+    func createRegistrationScreen() -> RegistrationViewController {
+        guard let registrationView = resolver.resolve(RegistrationViewController.self, argument: self as RegistrationViewModelOutput) else {
+            fatalError("Couln't load registration view")
+        }
+        
+        return registrationView
+    }
+}
+
+//MARK: - RegistrationViewModelOutput
+extension MainCoordinator: RegistrationViewModelOutput {
+
+    func moveToMainFlow() {
+        print("successfully")
     }
 }

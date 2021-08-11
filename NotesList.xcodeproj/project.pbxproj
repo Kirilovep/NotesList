@@ -26,6 +26,23 @@
 		A878B51226C3C48700BD74B0 /* MainCoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B51126C3C48700BD74B0 /* MainCoordinatorAssembly.swift */; };
 		A878B51726C3C55D00BD74B0 /* Extensions+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B51626C3C55D00BD74B0 /* Extensions+String.swift */; };
 		A878B51D26C3C61B00BD74B0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A878B51F26C3C61B00BD74B0 /* Localizable.strings */; };
+		A878B52826C3C7A100BD74B0 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B52726C3C7A100BD74B0 /* RegistrationViewController.swift */; };
+		A878B52A26C3C7B000BD74B0 /* RegistrationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A878B52926C3C7B000BD74B0 /* RegistrationViewController.storyboard */; };
+		A878B52C26C3C7C900BD74B0 /* RegistrationAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B52B26C3C7C900BD74B0 /* RegistrationAssemblyContainer.swift */; };
+		A878B52E26C3C7DF00BD74B0 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B52D26C3C7DF00BD74B0 /* RegistrationViewModel.swift */; };
+		A878B53026C3C7EA00BD74B0 /* RegistrationViewModelImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B52F26C3C7EA00BD74B0 /* RegistrationViewModelImp.swift */; };
+		A878B53226C3C83500BD74B0 /* RegistrationViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B53126C3C83500BD74B0 /* RegistrationViewModelOutput.swift */; };
+		A878B53526C3D7EB00BD74B0 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B53426C3D7EB00BD74B0 /* UIButton.swift */; };
+		A878B53926C3DA0B00BD74B0 /* ValidatorServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B53826C3DA0B00BD74B0 /* ValidatorServiceImp.swift */; };
+		A878B53B26C3DA1600BD74B0 /* ValidatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B53A26C3DA1600BD74B0 /* ValidatorService.swift */; };
+		A878B53D26C3DAB700BD74B0 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B53C26C3DAB700BD74B0 /* ValidationError.swift */; };
+		A878B53F26C3DBD300BD74B0 /* Extension+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B53E26C3DBD300BD74B0 /* Extension+UITextField.swift */; };
+		A878B54126C3DD1100BD74B0 /* UserRegistrationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B54026C3DD1100BD74B0 /* UserRegistrationData.swift */; };
+		A878B54326C3DD5100BD74B0 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B54226C3DD5100BD74B0 /* Extension+UIViewController.swift */; };
+		A878B54626C3DFFD00BD74B0 /* RegistrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B54526C3DFFD00BD74B0 /* RegistrationService.swift */; };
+		A878B54826C3E00500BD74B0 /* RegistrationServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B54726C3E00500BD74B0 /* RegistrationServiceImp.swift */; };
+		A878B54A26C3E02F00BD74B0 /* RegistrationServiceAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B54926C3E02F00BD74B0 /* RegistrationServiceAssemblyContainer.swift */; };
+		A878B54C26C4012500BD74B0 /* ValidatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B54B26C4012500BD74B0 /* ValidatorType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +70,23 @@
 		A878B51926C3C57E00BD74B0 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		A878B51E26C3C61B00BD74B0 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A878B52026C3C61F00BD74B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A878B52726C3C7A100BD74B0 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		A878B52926C3C7B000BD74B0 /* RegistrationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegistrationViewController.storyboard; sourceTree = "<group>"; };
+		A878B52B26C3C7C900BD74B0 /* RegistrationAssemblyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationAssemblyContainer.swift; sourceTree = "<group>"; };
+		A878B52D26C3C7DF00BD74B0 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		A878B52F26C3C7EA00BD74B0 /* RegistrationViewModelImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModelImp.swift; sourceTree = "<group>"; };
+		A878B53126C3C83500BD74B0 /* RegistrationViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModelOutput.swift; sourceTree = "<group>"; };
+		A878B53426C3D7EB00BD74B0 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		A878B53826C3DA0B00BD74B0 /* ValidatorServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorServiceImp.swift; sourceTree = "<group>"; };
+		A878B53A26C3DA1600BD74B0 /* ValidatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorService.swift; sourceTree = "<group>"; };
+		A878B53C26C3DAB700BD74B0 /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
+		A878B53E26C3DBD300BD74B0 /* Extension+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITextField.swift"; sourceTree = "<group>"; };
+		A878B54026C3DD1100BD74B0 /* UserRegistrationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationData.swift; sourceTree = "<group>"; };
+		A878B54226C3DD5100BD74B0 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
+		A878B54526C3DFFD00BD74B0 /* RegistrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationService.swift; sourceTree = "<group>"; };
+		A878B54726C3E00500BD74B0 /* RegistrationServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationServiceImp.swift; sourceTree = "<group>"; };
+		A878B54926C3E02F00BD74B0 /* RegistrationServiceAssemblyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationServiceAssemblyContainer.swift; sourceTree = "<group>"; };
+		A878B54B26C4012500BD74B0 /* ValidatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorType.swift; sourceTree = "<group>"; };
 		E93AFEBCAC21E4BAE1E82D62 /* Pods-NotesList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotesList.release.xcconfig"; path = "Target Support Files/Pods-NotesList/Pods-NotesList.release.xcconfig"; sourceTree = "<group>"; };
 		FFC47C158A697C40665BF4FD /* Pods_NotesList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotesList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -98,6 +132,8 @@
 		A878B4DD26C3B93500BD74B0 /* NotesList */ = {
 			isa = PBXGroup;
 			children = (
+				A878B53626C3D9FB00BD74B0 /* Services */,
+				A878B53326C3D7DC00BD74B0 /* Enums */,
 				A878B51A26C3C5CA00BD74B0 /* Localization */,
 				A878B51526C3C55200BD74B0 /* Extensions */,
 				A878B50826C3C42400BD74B0 /* ApplicationCoordinator */,
@@ -197,6 +233,7 @@
 		A878B51426C3C52000BD74B0 /* AuthFlow */ = {
 			isa = PBXGroup;
 			children = (
+				A878B52126C3C75400BD74B0 /* RegistrationModule */,
 			);
 			path = AuthFlow;
 			sourceTree = "<group>";
@@ -205,6 +242,8 @@
 			isa = PBXGroup;
 			children = (
 				A878B51626C3C55D00BD74B0 /* Extensions+String.swift */,
+				A878B53E26C3DBD300BD74B0 /* Extension+UITextField.swift */,
+				A878B54226C3DD5100BD74B0 /* Extension+UIViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -215,6 +254,98 @@
 				A878B51F26C3C61B00BD74B0 /* Localizable.strings */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		A878B52126C3C75400BD74B0 /* RegistrationModule */ = {
+			isa = PBXGroup;
+			children = (
+				A878B52526C3C76C00BD74B0 /* Assembly */,
+				A878B52426C3C76700BD74B0 /* ViewModel */,
+				A878B52326C3C76400BD74B0 /* Model */,
+				A878B52226C3C76100BD74B0 /* View */,
+			);
+			path = RegistrationModule;
+			sourceTree = "<group>";
+		};
+		A878B52226C3C76100BD74B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A878B52626C3C78100BD74B0 /* Storyboard */,
+				A878B52726C3C7A100BD74B0 /* RegistrationViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A878B52326C3C76400BD74B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A878B54026C3DD1100BD74B0 /* UserRegistrationData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A878B52426C3C76700BD74B0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A878B52D26C3C7DF00BD74B0 /* RegistrationViewModel.swift */,
+				A878B52F26C3C7EA00BD74B0 /* RegistrationViewModelImp.swift */,
+				A878B53126C3C83500BD74B0 /* RegistrationViewModelOutput.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A878B52526C3C76C00BD74B0 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				A878B52B26C3C7C900BD74B0 /* RegistrationAssemblyContainer.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		A878B52626C3C78100BD74B0 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A878B52926C3C7B000BD74B0 /* RegistrationViewController.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		A878B53326C3D7DC00BD74B0 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				A878B53426C3D7EB00BD74B0 /* UIButton.swift */,
+				A878B53C26C3DAB700BD74B0 /* ValidationError.swift */,
+				A878B54B26C4012500BD74B0 /* ValidatorType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		A878B53626C3D9FB00BD74B0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A878B54426C3DFE700BD74B0 /* RegistrationService */,
+				A878B53726C3D9FF00BD74B0 /* ValidatorService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A878B53726C3D9FF00BD74B0 /* ValidatorService */ = {
+			isa = PBXGroup;
+			children = (
+				A878B53826C3DA0B00BD74B0 /* ValidatorServiceImp.swift */,
+				A878B53A26C3DA1600BD74B0 /* ValidatorService.swift */,
+			);
+			path = ValidatorService;
+			sourceTree = "<group>";
+		};
+		A878B54426C3DFE700BD74B0 /* RegistrationService */ = {
+			isa = PBXGroup;
+			children = (
+				A878B54526C3DFFD00BD74B0 /* RegistrationService.swift */,
+				A878B54726C3E00500BD74B0 /* RegistrationServiceImp.swift */,
+				A878B54926C3E02F00BD74B0 /* RegistrationServiceAssemblyContainer.swift */,
+			);
+			path = RegistrationService;
 			sourceTree = "<group>";
 		};
 		EB9293B5EDA3620C0E6F3700 /* Pods */ = {
@@ -289,6 +420,7 @@
 			files = (
 				A878B51D26C3C61B00BD74B0 /* Localizable.strings in Resources */,
 				A878B4EB26C3B93600BD74B0 /* LaunchScreen.storyboard in Resources */,
+				A878B52A26C3C7B000BD74B0 /* RegistrationViewController.storyboard in Resources */,
 				A878B4F426C3BFE300BD74B0 /* GoogleService-Info.plist in Resources */,
 				A878B4E826C3B93600BD74B0 /* Assets.xcassets in Resources */,
 				A878B4E626C3B93500BD74B0 /* Main.storyboard in Resources */,
@@ -363,17 +495,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				A878B51726C3C55D00BD74B0 /* Extensions+String.swift in Sources */,
+				A878B54826C3E00500BD74B0 /* RegistrationServiceImp.swift in Sources */,
 				A878B50526C3C3E900BD74B0 /* Router.swift in Sources */,
 				A878B51026C3C47300BD74B0 /* MainCoordinator.swift in Sources */,
 				A878B4DF26C3B93500BD74B0 /* AppDelegate.swift in Sources */,
+				A878B53026C3C7EA00BD74B0 /* RegistrationViewModelImp.swift in Sources */,
+				A878B52826C3C7A100BD74B0 /* RegistrationViewController.swift in Sources */,
+				A878B53526C3D7EB00BD74B0 /* UIButton.swift in Sources */,
+				A878B54C26C4012500BD74B0 /* ValidatorType.swift in Sources */,
+				A878B54A26C3E02F00BD74B0 /* RegistrationServiceAssemblyContainer.swift in Sources */,
+				A878B53D26C3DAB700BD74B0 /* ValidationError.swift in Sources */,
+				A878B54326C3DD5100BD74B0 /* Extension+UIViewController.swift in Sources */,
 				A878B50226C3C3C100BD74B0 /* StoryboardLoadable.swift in Sources */,
+				A878B52C26C3C7C900BD74B0 /* RegistrationAssemblyContainer.swift in Sources */,
+				A878B53926C3DA0B00BD74B0 /* ValidatorServiceImp.swift in Sources */,
 				A878B4FE26C3C39E00BD74B0 /* Coordinator.swift in Sources */,
+				A878B53B26C3DA1600BD74B0 /* ValidatorService.swift in Sources */,
+				A878B54626C3DFFD00BD74B0 /* RegistrationService.swift in Sources */,
 				A878B50A26C3C42F00BD74B0 /* ApplicationCoordinator.swift in Sources */,
 				A878B51226C3C48700BD74B0 /* MainCoordinatorAssembly.swift in Sources */,
 				A878B4E126C3B93500BD74B0 /* SceneDelegate.swift in Sources */,
+				A878B53226C3C83500BD74B0 /* RegistrationViewModelOutput.swift in Sources */,
+				A878B54126C3DD1100BD74B0 /* UserRegistrationData.swift in Sources */,
 				A878B50C26C3C44E00BD74B0 /* ApplicationCoordinatorAssembly.swift in Sources */,
 				A878B50726C3C3F600BD74B0 /* RouterImp.swift in Sources */,
+				A878B52E26C3C7DF00BD74B0 /* RegistrationViewModel.swift in Sources */,
 				A878B4FB26C3C38300BD74B0 /* BaseCoordinator.swift in Sources */,
+				A878B53F26C3DBD300BD74B0 /* Extension+UITextField.swift in Sources */,
 				A878B50026C3C3AB00BD74B0 /* Presentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

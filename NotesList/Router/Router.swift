@@ -20,11 +20,7 @@ protocol Router: Presentable {
   func push(_ module: Presentable?, animated: Bool, completion: (() -> Void)?)
   func push(_ module: Presentable?, animated: Bool, hideBottomBar: Bool, hideBar: Bool, completion: (() -> Void)?)
   func push(_ module: Presentable?, hideBar: Bool)
-  func pushWithCustomTransition(transitionType: CATransitionType,
-                                transitionSubtype: CATransitionSubtype,
-                                _ module: Presentable?,
-                                animated: Bool,
-                                hideBar: Bool)
+  func pushWithCustomTransition(transitionType: CATransitionType, transitionSubtype: CATransitionSubtype, _ module: Presentable?, animated: Bool, hideBar: Bool)
 
   func popModule()
   func popModule(animated: Bool)

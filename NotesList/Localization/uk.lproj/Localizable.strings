@@ -5,3 +5,13 @@
   Created by Yehor Kyrylov on 11.08.2021.
   
 */
+"Email" = "Електронна пошта";
+"Password" = "Пароль";
+"Start typing your email" = "Почніть вводити електронну пошту";
+"Start typing your password" = "Почніть вводити свій пароль";
+"Register" = "Зареєструватись";
+"Something went wrong..." = "Щось пішло не так...";
+"Password is Required" = "Пароль обов'язковий";
+"Password must have at least 6 characters" = "Пароль повинен містити не менше 6 символів";
+"Password must be more than 6 characters, with at least one character and one numeric character" = "Пароль повинен містити більше 6 символів, принаймні один символ та один числовий символ";
+"Invalid e-mail Address" = "Невірна адреса електронної пошти";

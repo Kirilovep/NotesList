@@ -10,7 +10,10 @@ import Swinject
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
-    private let assembler = Assembler()
+    private let assembler = Assembler([ApplicationCoordinatorAssembly(),
+                                        MainCoordinatorAssembly(),
+                                        RegistrationAssemblyContainer(),
+                                        RegistrationServiceAssemblyContainer()])
     private let navigationController = UINavigationController()
     private var applicationCoordinator: ApplicationCoordinator!
     private var router: Router!
