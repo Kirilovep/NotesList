@@ -16,7 +16,6 @@ final class MainCoordinator: BaseCoordinator {
 
     var router: Router!
     var resolver: Resolver!
-    var categoriesRouter: Router?
 
     override func start() {
         showFlow()
@@ -30,12 +29,10 @@ private extension MainCoordinator {
         let loginScreen = createLoginScreen()
         
         if userDefaults.bool(forKey: UserKeys.userLoginStatusKey.rawValue) {
-            print("true")
+            createNotesCoordinator()
         } else {
-            print("false")
+            router.setRootModule(loginScreen, hideBar: true)
         }
-                
-        self.router.setRootModule(loginScreen, hideBar: true)
     }
 
     func createRegistrationScreen() -> RegistrationViewController {
@@ -53,6 +50,15 @@ private extension MainCoordinator {
         
         return loginView
     }
+    
+    func createNotesCoordinator() {
+//        guard let notesCoordinator = resolver.resolve(NotesCoordinator.self, argument: router) else {
+//            return
+//        }
+        let notesCoordinator = resolver.resolve(NotesCoordinator.self, argument: router)!
+        addDependency(notesCoordinator)
+        notesCoordinator.start()
+    }
 }
 
 //MARK: - RegistrationViewModelOutput
@@ -63,7 +69,8 @@ extension MainCoordinator: RegistrationViewModelOutput {
     }
     
     func moveToMainFlow() {
-        print("successfully")
+        createNotesCoordinator()
+        removeDependency(self)
     }
 }
 
@@ -71,7 +78,8 @@ extension MainCoordinator: RegistrationViewModelOutput {
 extension MainCoordinator: LoginViewModelOutput {
 
     func pushToMainFlow() {
-        print("push")
+        createNotesCoordinator()
+        removeDependency(self)
     }
     
     func presentRegisterScreen() {

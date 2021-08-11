@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		5894D6FA286CBF73EE535EFF /* Pods_NotesList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC47C158A697C40665BF4FD /* Pods_NotesList.framework */; };
+		A6EB180826C4524F00336BC6 /* NotesAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB180726C4524F00336BC6 /* NotesAssemblyContainer.swift */; };
+		A6EB182126C453C300336BC6 /* NotesListViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB182026C453C300336BC6 /* NotesListViewModelOutput.swift */; };
+		A6EB182626C453F100336BC6 /* NotesListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6EB182526C453F100336BC6 /* NotesListViewController.storyboard */; };
+		A6EB182A26C4540700336BC6 /* NotesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB182926C4540700336BC6 /* NotesListViewController.swift */; };
+		A6EB182D26C4542300336BC6 /* NotesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB182C26C4542300336BC6 /* NotesListViewModel.swift */; };
+		A6EB183026C4542C00336BC6 /* NotesListViewModelImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB182F26C4542C00336BC6 /* NotesListViewModelImp.swift */; };
+		A6EB183426C457A400336BC6 /* NotesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB183326C457A400336BC6 /* NotesCoordinator.swift */; };
+		A6EB183826C457DE00336BC6 /* NotesCoordinatorAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB183726C457DE00336BC6 /* NotesCoordinatorAssemblyContainer.swift */; };
+		A6EB183C26C45D1100336BC6 /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB183A26C45D1100336BC6 /* NotesTableViewCell.swift */; };
+		A6EB183D26C45D1100336BC6 /* NotesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6EB183B26C45D1100336BC6 /* NotesTableViewCell.xib */; };
+		A6EB184426C45D7800336BC6 /* Extension+UITableVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB184326C45D7800336BC6 /* Extension+UITableVIew.swift */; };
+		A6EB184726C4639900336BC6 /* NotesCellViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB184626C4639900336BC6 /* NotesCellViewModelType.swift */; };
 		A878B4DF26C3B93500BD74B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B4DE26C3B93500BD74B0 /* AppDelegate.swift */; };
 		A878B4E126C3B93500BD74B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B4E026C3B93500BD74B0 /* SceneDelegate.swift */; };
 		A878B4E626C3B93500BD74B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A878B4E426C3B93500BD74B0 /* Main.storyboard */; };
@@ -58,6 +70,18 @@
 
 /* Begin PBXFileReference section */
 		5A20D131CFECB5184B34D91D /* Pods-NotesList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotesList.debug.xcconfig"; path = "Target Support Files/Pods-NotesList/Pods-NotesList.debug.xcconfig"; sourceTree = "<group>"; };
+		A6EB180726C4524F00336BC6 /* NotesAssemblyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAssemblyContainer.swift; sourceTree = "<group>"; };
+		A6EB182026C453C300336BC6 /* NotesListViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListViewModelOutput.swift; sourceTree = "<group>"; };
+		A6EB182526C453F100336BC6 /* NotesListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NotesListViewController.storyboard; sourceTree = "<group>"; };
+		A6EB182926C4540700336BC6 /* NotesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListViewController.swift; sourceTree = "<group>"; };
+		A6EB182C26C4542300336BC6 /* NotesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListViewModel.swift; sourceTree = "<group>"; };
+		A6EB182F26C4542C00336BC6 /* NotesListViewModelImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListViewModelImp.swift; sourceTree = "<group>"; };
+		A6EB183326C457A400336BC6 /* NotesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesCoordinator.swift; sourceTree = "<group>"; };
+		A6EB183726C457DE00336BC6 /* NotesCoordinatorAssemblyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesCoordinatorAssemblyContainer.swift; sourceTree = "<group>"; };
+		A6EB183A26C45D1100336BC6 /* NotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
+		A6EB183B26C45D1100336BC6 /* NotesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotesTableViewCell.xib; sourceTree = "<group>"; };
+		A6EB184326C45D7800336BC6 /* Extension+UITableVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableVIew.swift"; sourceTree = "<group>"; };
+		A6EB184626C4639900336BC6 /* NotesCellViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesCellViewModelType.swift; sourceTree = "<group>"; };
 		A878B4DB26C3B93500BD74B0 /* NotesList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A878B4DE26C3B93500BD74B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A878B4E026C3B93500BD74B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +155,87 @@
 				FFC47C158A697C40665BF4FD /* Pods_NotesList.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6EB180126C451C200336BC6 /* NotesModule */ = {
+			isa = PBXGroup;
+			children = (
+				A6EB180626C4521F00336BC6 /* Assembly */,
+				A6EB180526C4521C00336BC6 /* View */,
+				A6EB180426C4521800336BC6 /* Model */,
+				A6EB180326C4521300336BC6 /* ViewModel */,
+			);
+			path = NotesModule;
+			sourceTree = "<group>";
+		};
+		A6EB180326C4521300336BC6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A6EB182026C453C300336BC6 /* NotesListViewModelOutput.swift */,
+				A6EB182C26C4542300336BC6 /* NotesListViewModel.swift */,
+				A6EB182F26C4542C00336BC6 /* NotesListViewModelImp.swift */,
+				A6EB184626C4639900336BC6 /* NotesCellViewModelType.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A6EB180426C4521800336BC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6EB180526C4521C00336BC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6EB183F26C45D1300336BC6 /* NotesTableViewCell */,
+				A6EB181026C452EF00336BC6 /* Controller */,
+				A6EB180B26C452D400336BC6 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6EB180626C4521F00336BC6 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				A6EB180726C4524F00336BC6 /* NotesAssemblyContainer.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		A6EB180B26C452D400336BC6 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A6EB182526C453F100336BC6 /* NotesListViewController.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		A6EB181026C452EF00336BC6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A6EB182926C4540700336BC6 /* NotesListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A6EB183226C4579900336BC6 /* NotesCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A6EB183326C457A400336BC6 /* NotesCoordinator.swift */,
+				A6EB183726C457DE00336BC6 /* NotesCoordinatorAssemblyContainer.swift */,
+			);
+			path = NotesCoordinator;
+			sourceTree = "<group>";
+		};
+		A6EB183F26C45D1300336BC6 /* NotesTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A6EB183A26C45D1100336BC6 /* NotesTableViewCell.swift */,
+				A6EB183B26C45D1100336BC6 /* NotesTableViewCell.xib */,
+			);
+			path = NotesTableViewCell;
 			sourceTree = "<group>";
 		};
 		A878B4D226C3B93500BD74B0 = {
@@ -249,6 +354,8 @@
 		A878B51326C3C51900BD74B0 /* NotesFlow */ = {
 			isa = PBXGroup;
 			children = (
+				A6EB183226C4579900336BC6 /* NotesCoordinator */,
+				A6EB180126C451C200336BC6 /* NotesModule */,
 			);
 			path = NotesFlow;
 			sourceTree = "<group>";
@@ -268,6 +375,7 @@
 				A878B51626C3C55D00BD74B0 /* Extensions+String.swift */,
 				A878B53E26C3DBD300BD74B0 /* Extension+UITextField.swift */,
 				A878B54226C3DD5100BD74B0 /* Extension+UIViewController.swift */,
+				A6EB184326C45D7800336BC6 /* Extension+UITableVIew.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -378,7 +486,6 @@
 			isa = PBXGroup;
 			children = (
 				A878B55226C4024000BD74B0 /* View */,
-				A878B55126C4023D00BD74B0 /* Model */,
 				A878B55026C4023800BD74B0 /* ViewModel */,
 				A878B54E26C4021B00BD74B0 /* Assembly */,
 			);
@@ -409,13 +516,6 @@
 				A878B55F26C4039900BD74B0 /* LoginViewModelImp.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		A878B55126C4023D00BD74B0 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		A878B55226C4024000BD74B0 /* View */ = {
@@ -532,12 +632,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A878B51D26C3C61B00BD74B0 /* Localizable.strings in Resources */,
+				A6EB182626C453F100336BC6 /* NotesListViewController.storyboard in Resources */,
 				A878B4EB26C3B93600BD74B0 /* LaunchScreen.storyboard in Resources */,
 				A878B52A26C3C7B000BD74B0 /* RegistrationViewController.storyboard in Resources */,
 				A878B4F426C3BFE300BD74B0 /* GoogleService-Info.plist in Resources */,
 				A878B4E826C3B93600BD74B0 /* Assets.xcassets in Resources */,
 				A878B55626C402B000BD74B0 /* LoginViewController.storyboard in Resources */,
 				A878B4E626C3B93500BD74B0 /* Main.storyboard in Resources */,
+				A6EB183D26C45D1100336BC6 /* NotesTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +714,7 @@
 				A878B51726C3C55D00BD74B0 /* Extensions+String.swift in Sources */,
 				A878B55E26C4039100BD74B0 /* LoginViewModel.swift in Sources */,
 				A878B56026C4039900BD74B0 /* LoginViewModelImp.swift in Sources */,
+				A6EB183426C457A400336BC6 /* NotesCoordinator.swift in Sources */,
 				A878B54826C3E00500BD74B0 /* RegistrationServiceImp.swift in Sources */,
 				A878B56726C40B1E00BD74B0 /* LoginServiceAssemblyContainer.swift in Sources */,
 				A878B50526C3C3E900BD74B0 /* Router.swift in Sources */,
@@ -619,19 +722,25 @@
 				A878B4DF26C3B93500BD74B0 /* AppDelegate.swift in Sources */,
 				A878B53026C3C7EA00BD74B0 /* RegistrationViewModelImp.swift in Sources */,
 				A878B52826C3C7A100BD74B0 /* RegistrationViewController.swift in Sources */,
+				A6EB180826C4524F00336BC6 /* NotesAssemblyContainer.swift in Sources */,
 				A878B53526C3D7EB00BD74B0 /* UIButton.swift in Sources */,
 				A878B54C26C4012500BD74B0 /* ValidatorType.swift in Sources */,
 				A878B54A26C3E02F00BD74B0 /* RegistrationServiceAssemblyContainer.swift in Sources */,
 				A878B55C26C4036900BD74B0 /* LoginViewModelOutput.swift in Sources */,
 				A878B53D26C3DAB700BD74B0 /* ValidationError.swift in Sources */,
+				A6EB183026C4542C00336BC6 /* NotesListViewModelImp.swift in Sources */,
 				A878B54326C3DD5100BD74B0 /* Extension+UIViewController.swift in Sources */,
 				A878B56E26C41CC900BD74B0 /* UserKeys.swift in Sources */,
+				A6EB182D26C4542300336BC6 /* NotesListViewModel.swift in Sources */,
 				A878B50226C3C3C100BD74B0 /* StoryboardLoadable.swift in Sources */,
 				A878B52C26C3C7C900BD74B0 /* RegistrationAssemblyContainer.swift in Sources */,
 				A878B53926C3DA0B00BD74B0 /* ValidatorServiceImp.swift in Sources */,
 				A878B4FE26C3C39E00BD74B0 /* Coordinator.swift in Sources */,
 				A878B53B26C3DA1600BD74B0 /* ValidatorService.swift in Sources */,
+				A6EB182126C453C300336BC6 /* NotesListViewModelOutput.swift in Sources */,
+				A6EB183C26C45D1100336BC6 /* NotesTableViewCell.swift in Sources */,
 				A878B54626C3DFFD00BD74B0 /* RegistrationService.swift in Sources */,
+				A6EB184726C4639900336BC6 /* NotesCellViewModelType.swift in Sources */,
 				A878B55826C402BD00BD74B0 /* LoginViewController.swift in Sources */,
 				A878B50A26C3C42F00BD74B0 /* ApplicationCoordinator.swift in Sources */,
 				A878B51226C3C48700BD74B0 /* MainCoordinatorAssembly.swift in Sources */,
@@ -640,13 +749,16 @@
 				A878B56A26C41BFD00BD74B0 /* UserDefaultsHelper.swift in Sources */,
 				A878B56326C40AFA00BD74B0 /* LoginService.swift in Sources */,
 				A878B56526C40B0500BD74B0 /* LoginServiceImp.swift in Sources */,
+				A6EB182A26C4540700336BC6 /* NotesListViewController.swift in Sources */,
 				A878B54126C3DD1100BD74B0 /* UserRegistrationData.swift in Sources */,
 				A878B50C26C3C44E00BD74B0 /* ApplicationCoordinatorAssembly.swift in Sources */,
 				A878B50726C3C3F600BD74B0 /* RouterImp.swift in Sources */,
 				A878B52E26C3C7DF00BD74B0 /* RegistrationViewModel.swift in Sources */,
+				A6EB183826C457DE00336BC6 /* NotesCoordinatorAssemblyContainer.swift in Sources */,
 				A878B4FB26C3C38300BD74B0 /* BaseCoordinator.swift in Sources */,
 				A878B53F26C3DBD300BD74B0 /* Extension+UITextField.swift in Sources */,
 				A878B50026C3C3AB00BD74B0 /* Presentable.swift in Sources */,
+				A6EB184426C45D7800336BC6 /* Extension+UITableVIew.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -808,7 +920,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YQ77VQM8J8;
+				DEVELOPMENT_TEAM = 9B52CZDFQ2;
 				INFOPLIST_FILE = NotesList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -829,7 +941,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YQ77VQM8J8;
+				DEVELOPMENT_TEAM = 9B52CZDFQ2;
 				INFOPLIST_FILE = NotesList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
