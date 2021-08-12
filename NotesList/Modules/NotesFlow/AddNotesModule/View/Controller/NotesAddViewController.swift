@@ -10,18 +10,50 @@ import UIKit
 class NotesAddViewController: UIViewController, StoryboardLoadable {
     
     // MARK: - Properties -
-    var viewModel: NotesAddViewModel!
+    private var pickedImage: UIImage?
 
+    var viewModel: NotesAddViewModel!
+    var imagePicker: ImagePicker!
+    var database: DatabaseService!
+    
     // MARK: - IBOutlets -
     @IBOutlet private weak var descriptionTextView: UITextView!
-    private let containerView = UIView()
-//    @IBOutlet private weak var containerView: UIView!
-//    @IBOutlet private weak var imageButton: UIButton!
-    
+
     // MARK: - Lifecycle -
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        database.addNewNote()
+    }
+}
+
+// MARK: - UITextViewDelegate -
+extension NotesAddViewController: UITextViewDelegate {
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if descriptionTextView.textColor == .lightGray {
+            descriptionTextView.text = nil
+            descriptionTextView.textColor = .black
+        }
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if descriptionTextView.text.isEmpty || descriptionTextView.text == "" {
+            descriptionTextView.textColor = .lightGray
+            descriptionTextView.text = "Type your text here...".localized()
+        }
+    }
+}
+
+// MARK: - ImagePickerDelegate
+extension NotesAddViewController: ImagePickerDelegate {
+
+    func didSelect(image: UIImage?) {
+        pickedImage = image
+    }
+    
+    func presentAlert() {
+        showAlertForImagePicker(imagePicker: imagePicker)
     }
 }
 
@@ -29,55 +61,31 @@ class NotesAddViewController: UIViewController, StoryboardLoadable {
 private extension NotesAddViewController {
     
     func setupUI() {
-        setupContainerView()
-        setupImageButton()
+        setupSaveButton()
         setupTextView()
-        setupObservers()
     }
-    
-    func setupContainerView() {
-        containerView.layer.borderWidth = 0.3
-        containerView.layer.borderColor = UIColor.lightGray.cgColor
-        containerView.layer.cornerRadius = ViewProperties.cornerRadius
-        containerView.frame.size.height = 300
-        containerView.frame.size.width = view.frame.width
-        containerView.backgroundColor = .red
-    }
-    
-    func setupImageButton() {
-//        imageButton.setTitle("Add image".localized(), for: .normal)
-    }
-    
+
     func setupTextView() {
         descriptionTextView.becomeFirstResponder()
         descriptionTextView.textColor = .lightGray
         descriptionTextView.text = "Type your text here...".localized()
-        descriptionTextView.inputAccessoryView = containerView
+        descriptionTextView.delegate = self
+        let customAccessoryView = createCustomAccessoryView()
+        descriptionTextView.inputAccessoryView = customAccessoryView
+        customAccessoryView.addImageButtonTapped = {
+            self.presentAlert()
+        }
     }
 
-    func setupObservers() {
-//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    func setupSaveButton() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save".localized(), style: .plain, target: self, action: #selector(saveButtonTapped))
     }
 }
 
 // MARK: - Private actions -
 private extension NotesAddViewController {
     
-    @IBAction func addImageButtonTapped(_ sender: UIButton) {
+    @objc func saveButtonTapped() {
+        
     }
-    
-//    @objc func keyboardWillShow(notification: NSNotification) {
-//        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
-//            if self.containerView.frame.origin.y == 0 {
-//                self.containerView.frame.origin.y -= keyboardSize.height
-//            }
-//        }
-//    }
-//
-//    @objc func keyboardWillHide(notification: NSNotification) {
-//        if self.containerView.frame.origin.y != 0 {
-//            self.containerView.frame.origin.y = 0
-//        }
-//    }
 }

@@ -27,6 +27,9 @@
 		A6EB185F26C465AB00336BC6 /* NotesAddViewModelImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB185E26C465AB00336BC6 /* NotesAddViewModelImp.swift */; };
 		A6EB186226C465B400336BC6 /* NotesAddViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB186126C465B400336BC6 /* NotesAddViewModelOutput.swift */; };
 		A6EB186526C46DAD00336BC6 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB186426C46DAD00336BC6 /* UIView.swift */; };
+		A86FBC2526C511EA00E37BD0 /* CustomAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86FBC2426C511EA00E37BD0 /* CustomAccessoryView.swift */; };
+		A86FBC2726C511FE00E37BD0 /* CustomAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A86FBC2626C511FE00E37BD0 /* CustomAccessoryView.xib */; };
+		A86FBC2926C518FB00E37BD0 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86FBC2826C518FB00E37BD0 /* ImagePicker.swift */; };
 		A878B4DF26C3B93500BD74B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B4DE26C3B93500BD74B0 /* AppDelegate.swift */; };
 		A878B4E126C3B93500BD74B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B4E026C3B93500BD74B0 /* SceneDelegate.swift */; };
 		A878B4E626C3B93500BD74B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A878B4E426C3B93500BD74B0 /* Main.storyboard */; };
@@ -73,6 +76,11 @@
 		A878B56726C40B1E00BD74B0 /* LoginServiceAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B56626C40B1E00BD74B0 /* LoginServiceAssemblyContainer.swift */; };
 		A878B56A26C41BFD00BD74B0 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B56926C41BFD00BD74B0 /* UserDefaultsHelper.swift */; };
 		A878B56E26C41CC900BD74B0 /* UserKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878B56D26C41CC900BD74B0 /* UserKeys.swift */; };
+		A891E7E326C529BC007A0662 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A891E7E226C529BC007A0662 /* DatabaseService.swift */; };
+		A891E7E526C529C9007A0662 /* DatabaseServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A891E7E426C529C9007A0662 /* DatabaseServiceImp.swift */; };
+		A891E7E726C52B00007A0662 /* DatabaseAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A891E7E626C52B00007A0662 /* DatabaseAssemblyContainer.swift */; };
+		A891E7EA26C52C52007A0662 /* NotesViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A891E7E926C52C52007A0662 /* NotesViewModelType.swift */; };
+		A891E7EC26C52CA7007A0662 /* NotesDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A891E7EB26C52CA7007A0662 /* NotesDataType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +104,9 @@
 		A6EB185E26C465AB00336BC6 /* NotesAddViewModelImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAddViewModelImp.swift; sourceTree = "<group>"; };
 		A6EB186126C465B400336BC6 /* NotesAddViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAddViewModelOutput.swift; sourceTree = "<group>"; };
 		A6EB186426C46DAD00336BC6 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		A86FBC2426C511EA00E37BD0 /* CustomAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAccessoryView.swift; sourceTree = "<group>"; };
+		A86FBC2626C511FE00E37BD0 /* CustomAccessoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAccessoryView.xib; sourceTree = "<group>"; };
+		A86FBC2826C518FB00E37BD0 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		A878B4DB26C3B93500BD74B0 /* NotesList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A878B4DE26C3B93500BD74B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A878B4E026C3B93500BD74B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +158,11 @@
 		A878B56626C40B1E00BD74B0 /* LoginServiceAssemblyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceAssemblyContainer.swift; sourceTree = "<group>"; };
 		A878B56926C41BFD00BD74B0 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 		A878B56D26C41CC900BD74B0 /* UserKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserKeys.swift; sourceTree = "<group>"; };
+		A891E7E226C529BC007A0662 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		A891E7E426C529C9007A0662 /* DatabaseServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseServiceImp.swift; sourceTree = "<group>"; };
+		A891E7E626C52B00007A0662 /* DatabaseAssemblyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseAssemblyContainer.swift; sourceTree = "<group>"; };
+		A891E7E926C52C52007A0662 /* NotesViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModelType.swift; sourceTree = "<group>"; };
+		A891E7EB26C52CA7007A0662 /* NotesDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotesDataType.swift; path = NotesList/Common/ViewModel/NotesDataType.swift; sourceTree = SOURCE_ROOT; };
 		E93AFEBCAC21E4BAE1E82D62 /* Pods-NotesList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotesList.release.xcconfig"; path = "Target Support Files/Pods-NotesList/Pods-NotesList.release.xcconfig"; sourceTree = "<group>"; };
 		FFC47C158A697C40665BF4FD /* Pods_NotesList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotesList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -176,7 +192,6 @@
 			children = (
 				A6EB180626C4521F00336BC6 /* Assembly */,
 				A6EB180526C4521C00336BC6 /* View */,
-				A6EB180426C4521800336BC6 /* Model */,
 				A6EB180326C4521300336BC6 /* ViewModel */,
 			);
 			path = NotesModule;
@@ -191,13 +206,6 @@
 				A6EB184626C4639900336BC6 /* NotesCellViewModelType.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		A6EB180426C4521800336BC6 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		A6EB180526C4521C00336BC6 /* View */ = {
@@ -276,6 +284,7 @@
 		A6EB184B26C4650900336BC6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A891E7EB26C52CA7007A0662 /* NotesDataType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -313,6 +322,32 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		A86FBC2226C511A600E37BD0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A891E7E826C52C42007A0662 /* ViewModel */,
+				A86FBC2326C511B600E37BD0 /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A86FBC2326C511B600E37BD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A86FBC2426C511EA00E37BD0 /* CustomAccessoryView.swift */,
+				A86FBC2626C511FE00E37BD0 /* CustomAccessoryView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A86FBC2A26C518FE00E37BD0 /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				A86FBC2826C518FB00E37BD0 /* ImagePicker.swift */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
 		A878B4D226C3B93500BD74B0 = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +369,7 @@
 		A878B4DD26C3B93500BD74B0 /* NotesList */ = {
 			isa = PBXGroup;
 			children = (
+				A86FBC2226C511A600E37BD0 /* Common */,
 				A878B56826C41BF000BD74B0 /* Helpers */,
 				A878B53626C3D9FB00BD74B0 /* Services */,
 				A878B53326C3D7DC00BD74B0 /* Enums */,
@@ -533,9 +569,11 @@
 		A878B53626C3D9FB00BD74B0 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A891E7E126C529AE007A0662 /* DatabaseService */,
 				A878B56126C40AF000BD74B0 /* LoginService */,
 				A878B54426C3DFE700BD74B0 /* RegistrationService */,
 				A878B53726C3D9FF00BD74B0 /* ValidatorService */,
+				A86FBC2A26C518FE00E37BD0 /* ImagePicker */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -638,6 +676,24 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		A891E7E126C529AE007A0662 /* DatabaseService */ = {
+			isa = PBXGroup;
+			children = (
+				A891E7E226C529BC007A0662 /* DatabaseService.swift */,
+				A891E7E426C529C9007A0662 /* DatabaseServiceImp.swift */,
+				A891E7E626C52B00007A0662 /* DatabaseAssemblyContainer.swift */,
+			);
+			path = DatabaseService;
+			sourceTree = "<group>";
+		};
+		A891E7E826C52C42007A0662 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A891E7E926C52C52007A0662 /* NotesViewModelType.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		EB9293B5EDA3620C0E6F3700 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -709,6 +765,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A878B51D26C3C61B00BD74B0 /* Localizable.strings in Resources */,
+				A86FBC2726C511FE00E37BD0 /* CustomAccessoryView.xib in Resources */,
 				A6EB182626C453F100336BC6 /* NotesListViewController.storyboard in Resources */,
 				A878B4EB26C3B93600BD74B0 /* LaunchScreen.storyboard in Resources */,
 				A6EB185526C4653000336BC6 /* NotesAddViewController.storyboard in Resources */,
@@ -791,6 +848,7 @@
 				A878B55A26C4031D00BD74B0 /* LoginAssemblyContainer.swift in Sources */,
 				A878B51726C3C55D00BD74B0 /* Extensions+String.swift in Sources */,
 				A878B55E26C4039100BD74B0 /* LoginViewModel.swift in Sources */,
+				A891E7EC26C52CA7007A0662 /* NotesDataType.swift in Sources */,
 				A878B56026C4039900BD74B0 /* LoginViewModelImp.swift in Sources */,
 				A6EB185B26C465A100336BC6 /* NotesAddViewModel.swift in Sources */,
 				A6EB183426C457A400336BC6 /* NotesCoordinator.swift in Sources */,
@@ -798,6 +856,7 @@
 				A878B56726C40B1E00BD74B0 /* LoginServiceAssemblyContainer.swift in Sources */,
 				A878B50526C3C3E900BD74B0 /* Router.swift in Sources */,
 				A878B51026C3C47300BD74B0 /* MainCoordinator.swift in Sources */,
+				A891E7E726C52B00007A0662 /* DatabaseAssemblyContainer.swift in Sources */,
 				A878B4DF26C3B93500BD74B0 /* AppDelegate.swift in Sources */,
 				A878B53026C3C7EA00BD74B0 /* RegistrationViewModelImp.swift in Sources */,
 				A878B52826C3C7A100BD74B0 /* RegistrationViewController.swift in Sources */,
@@ -808,6 +867,7 @@
 				A878B55C26C4036900BD74B0 /* LoginViewModelOutput.swift in Sources */,
 				A878B53D26C3DAB700BD74B0 /* ValidationError.swift in Sources */,
 				A6EB183026C4542C00336BC6 /* NotesListViewModelImp.swift in Sources */,
+				A891E7EA26C52C52007A0662 /* NotesViewModelType.swift in Sources */,
 				A878B54326C3DD5100BD74B0 /* Extension+UIViewController.swift in Sources */,
 				A878B56E26C41CC900BD74B0 /* UserKeys.swift in Sources */,
 				A6EB182D26C4542300336BC6 /* NotesListViewModel.swift in Sources */,
@@ -818,7 +878,9 @@
 				A878B53B26C3DA1600BD74B0 /* ValidatorService.swift in Sources */,
 				A6EB182126C453C300336BC6 /* NotesListViewModelOutput.swift in Sources */,
 				A6EB183C26C45D1100336BC6 /* NotesTableViewCell.swift in Sources */,
+				A86FBC2526C511EA00E37BD0 /* CustomAccessoryView.swift in Sources */,
 				A878B54626C3DFFD00BD74B0 /* RegistrationService.swift in Sources */,
+				A891E7E326C529BC007A0662 /* DatabaseService.swift in Sources */,
 				A6EB184726C4639900336BC6 /* NotesCellViewModelType.swift in Sources */,
 				A878B55826C402BD00BD74B0 /* LoginViewController.swift in Sources */,
 				A6EB185826C4656B00336BC6 /* NotesAddAssemblyContainer.swift in Sources */,
@@ -831,7 +893,9 @@
 				A878B56A26C41BFD00BD74B0 /* UserDefaultsHelper.swift in Sources */,
 				A878B56326C40AFA00BD74B0 /* LoginService.swift in Sources */,
 				A878B56526C40B0500BD74B0 /* LoginServiceImp.swift in Sources */,
+				A891E7E526C529C9007A0662 /* DatabaseServiceImp.swift in Sources */,
 				A6EB182A26C4540700336BC6 /* NotesListViewController.swift in Sources */,
+				A86FBC2926C518FB00E37BD0 /* ImagePicker.swift in Sources */,
 				A878B54126C3DD1100BD74B0 /* UserRegistrationData.swift in Sources */,
 				A878B50C26C3C44E00BD74B0 /* ApplicationCoordinatorAssembly.swift in Sources */,
 				A878B50726C3C3F600BD74B0 /* RouterImp.swift in Sources */,

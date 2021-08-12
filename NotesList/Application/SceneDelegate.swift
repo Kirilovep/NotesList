@@ -19,7 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                                         LoginServiceAssemblyContainer(),
                                         NotesAssemblyContainer(),
                                         NotesCoordinatorAssemblyContainer(),
-                                        NotesAddAssemblyContainer()])
+                                        NotesAddAssemblyContainer(),
+                                        DatabaseAssemblyContainer()])
     private let navigationController = UINavigationController()
     private var applicationCoordinator: ApplicationCoordinator!
     private var router: Router!

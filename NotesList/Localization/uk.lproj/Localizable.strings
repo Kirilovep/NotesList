@@ -15,3 +15,5 @@
 "Password must have at least 6 characters" = "Пароль повинен містити не менше 6 символів";
 "Password must be more than 6 characters, with at least one character and one numeric character" = "Пароль повинен містити більше 6 символів, принаймні один символ та один числовий символ";
 "Invalid e-mail Address" = "Невірна адреса електронної пошти";
+"Type your text here..." = "Уведіть свій текст тут...";
+"Save" = "Зберегти";
