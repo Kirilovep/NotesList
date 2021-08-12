@@ -8,5 +8,6 @@
 import Foundation
 
 protocol DatabaseService {
-    func addNewNote()
+    func addNewNote(note: NotesDataType, completionHandler: @escaping (Result<Bool, Error>) -> Void)
+    func getNotesData(completionHandler: @escaping (Result<[NotesViewModelType], Error>) -> Void)
 }

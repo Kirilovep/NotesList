@@ -198,9 +198,6 @@ NS_ASSUME_NONNULL_BEGIN
   if (!collectionPath) {
     ThrowInvalidArgument("Collection path cannot be nil.");
   }
-  if (!collectionPath.length) {
-    ThrowInvalidArgument("Collection path cannot be empty.");
-  }
   if ([collectionPath containsString:@"//"]) {
     ThrowInvalidArgument("Invalid path (%s). Paths must not contain // in them.", collectionPath);
   }
@@ -213,9 +210,6 @@ NS_ASSUME_NONNULL_BEGIN
   if (!documentPath) {
     ThrowInvalidArgument("Document path cannot be nil.");
   }
-  if (!documentPath.length) {
-    ThrowInvalidArgument("Document path cannot be empty.");
-  }
   if ([documentPath containsString:@"//"]) {
     ThrowInvalidArgument("Invalid path (%s). Paths must not contain // in them.", documentPath);
   }
@@ -227,9 +221,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (FIRQuery *)collectionGroupWithID:(NSString *)collectionID {
   if (!collectionID) {
     ThrowInvalidArgument("Collection ID cannot be nil.");
-  }
-  if (!collectionID.length) {
-    ThrowInvalidArgument("Collection ID cannot be empty.");
   }
   if ([collectionID containsString:@"/"]) {
     ThrowInvalidArgument("Invalid collection ID (%s). Collection IDs must not contain / in them.",
@@ -444,13 +435,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)getQueryNamed:(NSString *)name completion:(void (^)(FIRQuery *_Nullable query))completion {
   auto firestore = _firestore;
-  auto callback = [completion, firestore](core::Query query, bool found) {
+  auto callback = [completion, firestore](absl::optional<core::Query> query) {
     if (!completion) {
       return;
     }
 
-    if (found) {
-      FIRQuery *firQuery = [[FIRQuery alloc] initWithQuery:std::move(query) firestore:firestore];
+    if (query.has_value()) {
+      FIRQuery *firQuery = [[FIRQuery alloc] initWithQuery:std::move(query.value())
+                                                 firestore:firestore];
       completion(firQuery);
     } else {
       completion(nil);

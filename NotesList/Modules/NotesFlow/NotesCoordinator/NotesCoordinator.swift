@@ -64,5 +64,8 @@ extension NotesCoordinator: NotesListViewModelOutput {
 
 // MARK: - NotesAddViewModelOutput
 extension NotesCoordinator: NotesAddViewModelOutput {
-    
+
+    func popScreen() {
+        router.popModule()
+    }
 }

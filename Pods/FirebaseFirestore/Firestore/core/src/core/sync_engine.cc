@@ -37,7 +37,6 @@
 #include "Firestore/core/src/util/async_queue.h"
 #include "Firestore/core/src/util/log.h"
 #include "Firestore/core/src/util/status.h"
-#include "absl/strings/match.h"
 
 namespace firebase {
 namespace firestore {
@@ -60,6 +59,7 @@ using local::TargetData;
 using model::BatchId;
 using model::DocumentKey;
 using model::DocumentKeySet;
+using model::DocumentMap;
 using model::DocumentUpdateMap;
 using model::kBatchIdUnknown;
 using model::ListenSequenceNumber;
@@ -80,7 +80,7 @@ const ListenSequenceNumber kIrrelevantSequenceNumber = -1;
 bool ErrorIsInteresting(const Status& error) {
   bool missing_index =
       (error.code() == Error::kErrorFailedPrecondition &&
-       absl::StrContains(error.error_message(), "requires an index"));
+       error.error_message().find("requires an index") != std::string::npos);
   bool no_permission = (error.code() == Error::kErrorPermissionDenied);
   return missing_index || no_permission;
 }
@@ -168,8 +168,7 @@ void SyncEngine::StopListening(const Query& query) {
 
   TargetId target_id = query_view->target_id();
   auto& queries = queries_by_target_[target_id];
-  queries.erase(std::remove(queries.begin(), queries.end(), query),
-                queries.end());
+  queries.erase(std::remove(queries.begin(), queries.end(), query));
 
   if (queries.empty()) {
     local_store_->ReleaseTarget(target_id);

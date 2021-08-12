@@ -9,6 +9,6 @@ import UIKit
 
 struct NotesDataType {
     let image: UIImage?
-    let text: String?
-    let date: Date?
+    let description: String
+    let date: Date
 }

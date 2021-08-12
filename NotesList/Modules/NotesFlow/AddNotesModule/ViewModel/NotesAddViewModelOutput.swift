@@ -8,4 +8,5 @@
 import Foundation
 
 protocol NotesAddViewModelOutput {
+    func popScreen()
 }

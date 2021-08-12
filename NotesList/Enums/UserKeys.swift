@@ -9,4 +9,9 @@ import Foundation
 
 enum UserKeys: String {
     case userLoginStatusKey
+    case usersCollectionPath = "users"
+    case userDescriptionPath = "description"
+    case userDatePath = "date"
+    case userImages = "images"
+    case userNoteId
 }

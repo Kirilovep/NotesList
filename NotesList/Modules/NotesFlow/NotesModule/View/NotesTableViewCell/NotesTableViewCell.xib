@@ -20,8 +20,23 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPO-XU-on6">
                         <rect key="frame" x="15" y="5" width="290" height="34"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kf-ds-UsS">
-                                <rect key="frame" x="124" y="6.5" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXY-5a-IGz">
+                                <rect key="frame" x="233" y="5" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MQi-CF-MDb">
+                                <rect key="frame" x="10" y="5" width="29" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MQi-CF-MDb" secondAttribute="height" multiplier="1:0.7" id="FPx-qF-rzu"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="vcC-Vl-d1N">
+                                <rect key="frame" x="14.5" y="5" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kf-ds-UsS">
+                                <rect key="frame" x="49" y="5" width="111" height="18.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -29,24 +44,36 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2kf-ds-UsS" firstAttribute="centerX" secondItem="mPO-XU-on6" secondAttribute="centerX" id="ICu-Ma-M4e"/>
-                            <constraint firstItem="2kf-ds-UsS" firstAttribute="centerY" secondItem="mPO-XU-on6" secondAttribute="centerY" id="ggo-i0-UcG"/>
+                            <constraint firstItem="MQi-CF-MDb" firstAttribute="width" secondItem="mPO-XU-on6" secondAttribute="width" multiplier="0.1" id="01X-kF-Ayx"/>
+                            <constraint firstAttribute="bottom" secondItem="2kf-ds-UsS" secondAttribute="bottom" constant="10.5" id="Buk-Hb-eQm"/>
+                            <constraint firstAttribute="trailing" secondItem="2kf-ds-UsS" secondAttribute="trailing" constant="130" id="DjP-Vf-pem"/>
+                            <constraint firstItem="vcC-Vl-d1N" firstAttribute="centerX" secondItem="MQi-CF-MDb" secondAttribute="centerX" id="FWk-5Q-YnP"/>
+                            <constraint firstItem="MQi-CF-MDb" firstAttribute="leading" secondItem="mPO-XU-on6" secondAttribute="leading" constant="10" id="N2M-F0-Rtt"/>
+                            <constraint firstItem="vcC-Vl-d1N" firstAttribute="centerY" secondItem="MQi-CF-MDb" secondAttribute="centerY" id="Ny2-Hs-T4c"/>
+                            <constraint firstAttribute="trailing" secondItem="bXY-5a-IGz" secondAttribute="trailing" constant="15" id="QqZ-Pw-e3L"/>
+                            <constraint firstItem="2kf-ds-UsS" firstAttribute="top" secondItem="mPO-XU-on6" secondAttribute="top" constant="5" id="RZg-ov-W5k"/>
+                            <constraint firstItem="2kf-ds-UsS" firstAttribute="leading" secondItem="MQi-CF-MDb" secondAttribute="trailing" constant="10" id="k5h-7X-i3w"/>
+                            <constraint firstItem="MQi-CF-MDb" firstAttribute="top" secondItem="mPO-XU-on6" secondAttribute="top" constant="5" id="xJq-30-Cux"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="mPO-XU-on6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="0tT-Mq-JwG"/>
                     <constraint firstAttribute="trailing" secondItem="mPO-XU-on6" secondAttribute="trailing" constant="15" id="9h8-RE-BXh"/>
+                    <constraint firstItem="bXY-5a-IGz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="JKe-yB-HUZ"/>
                     <constraint firstAttribute="bottom" secondItem="mPO-XU-on6" secondAttribute="bottom" constant="5" id="Was-ot-e8z"/>
                     <constraint firstItem="mPO-XU-on6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="tAi-wb-zxe"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="activityIndicator" destination="vcC-Vl-d1N" id="Qkc-m2-rFl"/>
                 <outlet property="containerView" destination="mPO-XU-on6" id="HgO-Df-MyF"/>
+                <outlet property="dateLabel" destination="bXY-5a-IGz" id="b1r-iR-S5W"/>
+                <outlet property="noteImageView" destination="MQi-CF-MDb" id="KK7-07-SJS"/>
                 <outlet property="titleLabel" destination="2kf-ds-UsS" id="QI8-6t-jeW"/>
             </connections>
-            <point key="canvasLocation" x="140.57971014492756" y="85.714285714285708"/>
+            <point key="canvasLocation" x="140.57971014492756" y="87.723214285714278"/>
         </tableViewCell>
     </objects>
     <resources>

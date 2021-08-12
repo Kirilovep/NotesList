@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import Firebase
 
-struct NotesViewModelType {
-    let image: UIImage?
-    let date: Date?
+struct NotesViewModelType: NotesCellViewModelType {
+    let strImageUrl: StorageReference
+    let strDate: String?
     let description: String?
 }

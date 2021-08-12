@@ -14,6 +14,8 @@ class NotesAssemblyContainer: Assembly {
         container.register(NotesListViewModel.self) { (resolver, output: NotesListViewModelOutput) in
             let viewModel = NotesListViewModelImp()
             viewModel.output = output
+            viewModel.notesService = resolver.resolve(NotesService.self)
+
             return viewModel
         }
         

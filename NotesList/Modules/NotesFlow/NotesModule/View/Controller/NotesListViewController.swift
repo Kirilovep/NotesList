@@ -25,6 +25,7 @@ class NotesListViewController: UIViewController, StoryboardLoadable {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         viewModel.viewIsReady()
+        getNotes()
     }
 }
 
@@ -32,7 +33,7 @@ class NotesListViewController: UIViewController, StoryboardLoadable {
 extension NotesListViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return viewModel.numberOfNotes()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -43,9 +44,9 @@ extension NotesListViewController: UITableViewDataSource {
 // MARK: - UITableViewDelegate -
 extension NotesListViewController: UITableViewDelegate {
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return view.frame.height / 10
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return UITableView.automaticDimension
+//    }
 }
 
 // MARK: - Private functions -
@@ -60,16 +61,30 @@ private extension NotesListViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.registerCell(type: NotesTableViewCell.self)
+        tableView.estimatedRowHeight = view.frame.height / 10
     }
     
     func setupCells(atIndexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueCell(withType: NotesTableViewCell.self, for: atIndexPath)
         
+        cell.viewModel = viewModel.getNotes()[atIndexPath.row]
+
         return cell
     }
     
     func setupAddButton() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(addTapped))
+    }
+    
+    func getNotes() {
+        viewModel.fetchNotes { [weak self] result in
+            switch result {
+            case .success(_):
+                self?.tableView.reloadData()
+            case .failure(let error):
+                self?.showAlertWithError(message: error.localizedDescription)
+            }
+        }
     }
 }
 

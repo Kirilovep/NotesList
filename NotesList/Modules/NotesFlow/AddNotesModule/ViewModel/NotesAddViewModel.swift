@@ -8,4 +8,6 @@
 import Foundation
 
 protocol NotesAddViewModel {
+    func addNewNote(note: NotesDataType, completionHandler: @escaping (Result<Bool, Error>) -> Void)
+    func noteAdded()
 }

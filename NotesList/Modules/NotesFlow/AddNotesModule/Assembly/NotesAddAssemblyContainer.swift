@@ -14,6 +14,7 @@ class NotesAddAssemblyContainer: Assembly {
         container.register(NotesAddViewModel.self) { (resolver, output: NotesAddViewModelOutput) in
             let viewModel = NotesAddViewModelImp()
             viewModel.output = output
+            viewModel.database = resolver.resolve(DatabaseService.self)
             return viewModel
         }
         
@@ -28,7 +29,6 @@ class NotesAddAssemblyContainer: Assembly {
             let controller = NotesAddViewController.loadFromStoryboard()
             controller.viewModel = resolver.resolve(NotesAddViewModel.self, argument: output)
             controller.imagePicker = resolver.resolve(ImagePicker.self, argument: controller)
-            controller.database = resolver.resolve(DatabaseService.self)
             return controller
         }
     }

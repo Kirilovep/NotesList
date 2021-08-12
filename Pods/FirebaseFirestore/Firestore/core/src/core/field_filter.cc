@@ -41,6 +41,7 @@ namespace core {
 using model::FieldPath;
 using model::FieldValue;
 using util::ComparisonResult;
+using util::ThrowInvalidArgument;
 
 namespace {
 
