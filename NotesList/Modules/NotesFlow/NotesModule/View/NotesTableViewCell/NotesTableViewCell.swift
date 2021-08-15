@@ -11,10 +11,17 @@ import FirebaseUI
 class NotesTableViewCell: UITableViewCell {
     
     // MARK: - Properties -
+    private let containterborderWidth: CGFloat = 0.3
+    private let containerCornerRadius: CGFloat = 20
+    private let imageCornerRadius: CGFloat = 10
+    
     var viewModel: NotesCellViewModelType? {
         didSet {
-            guard let viewModel = viewModel else { return }
             activityIndicator.startAnimating()
+            guard let viewModel = viewModel else {
+                activityIndicator.stopAnimating()
+                return
+            }
             titleLabel.text = viewModel.description
             dateLabel.text = viewModel.strDate
             noteImageView.sd_setImage(with: viewModel.strImageUrl, placeholderImage: nil) { (_, _, _, _) in
@@ -43,10 +50,10 @@ private extension NotesTableViewCell {
     
     func setupUI() {
         contentView.backgroundColor = .clear
-        containerView.layer.borderWidth = 0.3
+        containerView.layer.borderWidth = containterborderWidth
         containerView.layer.borderColor = UIColor.lightGray.cgColor
-        containerView.layer.cornerRadius = 20
-        noteImageView.layer.cornerRadius = 10
+        containerView.layer.cornerRadius = containerCornerRadius
+        noteImageView.layer.cornerRadius = imageCornerRadius
         setupActivityIndicator()
     }
     

@@ -25,8 +25,20 @@ extension NotesListViewModelImp {
         output.showView()
     }
 
+    func exitButtonTapped() {
+        output.popModule()
+    }
+}
+
+// MARK: - NotesService -
+extension NotesListViewModelImp {
+
     func fetchNotes(completionHandler: @escaping (Result<Bool, Error>) -> Void) {
         notesService.fetchNotes(completionHandler: completionHandler)
+    }
+
+    func deleteNote(at indexPath: IndexPath, completionHandler: @escaping (Result<Bool, Error>) -> Void) {
+        notesService.deleteNote(at: indexPath, completionHandler: completionHandler)
     }
 
     func numberOfNotes() -> Int {

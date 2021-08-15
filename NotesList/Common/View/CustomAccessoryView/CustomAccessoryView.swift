@@ -10,7 +10,12 @@ import UIKit
 class CustomAccessoryView: UIView {
 
     // MARK: - Properties -
+    private let borderWidth: CGFloat = 0.3
+
     var addImageButtonTapped: (() -> Void)?
+
+    // MARK: - IBOutlets -
+    @IBOutlet private weak var addImageButton: UIButton!
 
     // MARK: - Lifecycle -
     override func awakeFromNib() {
@@ -23,8 +28,9 @@ class CustomAccessoryView: UIView {
 private extension CustomAccessoryView {
     
     func setupUI() {
-        layer.borderWidth = 0.3
+        layer.borderWidth = borderWidth
         layer.borderColor = UIColor.lightGray.cgColor
+        addImageButton.setTitle("Add image".localized(), for: .normal)
     }
 }
 

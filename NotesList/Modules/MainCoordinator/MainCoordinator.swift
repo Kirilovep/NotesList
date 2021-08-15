@@ -52,10 +52,10 @@ private extension MainCoordinator {
     }
     
     func createNotesCoordinator() {
-//        guard let notesCoordinator = resolver.resolve(NotesCoordinator.self, argument: router) else {
-//            return
-//        }
-        let notesCoordinator = resolver.resolve(NotesCoordinator.self, argument: router)!
+        guard let notesCoordinator = resolver.resolve(NotesCoordinator.self, argument: router) else {
+            return
+        }
+
         addDependency(notesCoordinator)
         notesCoordinator.start()
     }

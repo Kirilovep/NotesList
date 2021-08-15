@@ -26,7 +26,7 @@ private extension NotesCoordinator {
     
     func showNotesFlow() {
         let notesView = createNotesView()
-        router.setRootModule(notesView, hideBar: false)
+        router.setRootModule(notesView)
     }
     
     func createNotesView() -> NotesListViewController {
@@ -51,6 +51,13 @@ private extension NotesCoordinator {
 // MARK: - NotesListViewModelOutput
 extension NotesCoordinator: NotesListViewModelOutput {
 
+    func popModule() {
+        UserDefaultsHelper.saveLoginStatus(login: false)
+        let mainCoordinator = resolver.resolve(MainCoordinator.self, argument: router)!
+        addDependency(mainCoordinator)
+        mainCoordinator.start()
+    }
+    
     func showView() {
         router.isPrefersLargeTitlesHidden(hidden: false)
     }

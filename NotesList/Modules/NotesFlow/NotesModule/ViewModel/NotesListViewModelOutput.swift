@@ -9,5 +9,6 @@ import Foundation
 
 protocol NotesListViewModelOutput {
     func onAddButtonTapped()
-    func showView() 
+    func showView()
+    func popModule()
 }

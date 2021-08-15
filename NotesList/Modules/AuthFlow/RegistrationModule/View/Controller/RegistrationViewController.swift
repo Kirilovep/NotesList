@@ -68,7 +68,7 @@ private extension RegistrationViewController {
     func setupTextFields() {
         emailTextField.placeholder = "Start typing your email".localized()
         passwordTextField.placeholder = "Start typing your password".localized()
-//        passwordTextField.isSecureTextEntry = true
+        passwordTextField.isSecureTextEntry = true
 
         emailTextField.delegate = self
         passwordTextField.delegate = self

@@ -44,6 +44,6 @@ extension SceneDelegate {
     
     func setupApplicationCoordinator() {
         router = RouterImp(rootController: navigationController)
-        applicationCoordinator = ApplicationCoordinator(router: router, resolver: assembler.resolver)
+        applicationCoordinator = assembler.resolver.resolve(ApplicationCoordinator.self, argument: router)!
     }
 }

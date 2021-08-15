@@ -10,15 +10,16 @@ import Firebase
 
 class DatabaseServiceImp: DatabaseService {
     
+    // MARK: - Properties -
     private var database = Firestore.firestore()
     private let auth = Auth.auth()
     private let storage = Storage.storage().reference()
     
+    // MARK: - Functions -
     func addNewNote(note: NotesDataType, completionHandler: @escaping (Result<Bool, Error>) -> Void) {
-        var ref: DocumentReference? = nil
         let newUUID = UUID().uuidString
         
-        ref = database.collection(UserKeys.usersCollectionPath.rawValue).addDocument(data: [
+        database.collection(UserKeys.usersCollectionPath.rawValue).document(newUUID).setData([
             (UserKeys.userDescriptionPath.rawValue): note.description,
             UserKeys.userDatePath.rawValue: DateFormatterHelper.convertDateToString(date: note.date),
             UserKeys.userNoteId.rawValue: newUUID
@@ -39,6 +40,16 @@ class DatabaseServiceImp: DatabaseService {
         }
     }
     
+    func deleteNote(noteId: String, completionHandler: @escaping (Result<Bool, Error>) -> Void) {
+        database.collection(UserKeys.usersCollectionPath.rawValue).document(noteId).delete() { error in
+            if let error = error {
+                completionHandler(.failure(error))
+            } else {
+                completionHandler(.success(true))
+            }
+        }
+    }
+    
     func getNotesData(completionHandler: @escaping (Result<[NotesViewModelType], Error>) -> Void) {
         database.collection(UserKeys.usersCollectionPath.rawValue).getDocuments { (snapshot, error) in
             var notes: [NotesViewModelType] = []
@@ -51,14 +62,18 @@ class DatabaseServiceImp: DatabaseService {
                     let noteDate = data[UserKeys.userDatePath.rawValue] as? String
                     let noteId = data[UserKeys.userNoteId.rawValue] as? String
                     let imageRef = self.storage.child("\(UserKeys.userImages.rawValue)/\(noteId!)")
-                    notes.append(NotesViewModelType(strImageUrl: imageRef, strDate: noteDate, description: descriptionText))
+                    notes.append(NotesViewModelType(strImageUrl: imageRef, strDate: noteDate, description: descriptionText, noteId: noteId))
                 }
                 completionHandler(.success(notes))
             }
         }
     }
+}
+
+// MARK: - Private functions -
+private extension DatabaseServiceImp {
     
-    func uploadPhoto(image: UIImage, imageRef: String?, completion: @escaping (Result<Bool, Error>) -> Void) {
+    private func uploadPhoto(image: UIImage, imageRef: String?, completion: @escaping (Result<Bool, Error>) -> Void) {
         guard let imageRef = imageRef else { return }
 
         if let uploadData = image.pngData() {

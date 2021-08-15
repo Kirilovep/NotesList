@@ -11,6 +11,9 @@ class NotesServiceImp: NotesService {
 
     // MARK: - Properties -
     private var notes: [NotesViewModelType] = []
+    private enum EmptyData: Error {
+        case emptyData
+    }
     
     var database: DatabaseService!
 
@@ -19,6 +22,22 @@ class NotesServiceImp: NotesService {
             switch result {
             case .success(let data):
                 self.notes = data
+                if self.notes.isEmpty {
+                    completionHandler(.failure(EmptyData.emptyData))
+                    return
+                }
+                completionHandler(.success(true))
+            case .failure(let error):
+                completionHandler(.failure(error))
+            }
+        }
+    }
+    
+    func deleteNote(at indexPath: IndexPath, completionHandler: @escaping (Result<Bool, Error>) -> Void) {
+        guard let noteId = notes[indexPath.row].noteId else { return }
+        database.deleteNote(noteId: noteId) { (result) in
+            switch result {
+            case .success(_):
                 completionHandler(.success(true))
             case .failure(let error):
                 completionHandler(.failure(error))

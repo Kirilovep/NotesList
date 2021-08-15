@@ -10,27 +10,19 @@ import Swinject
 
 final class ApplicationCoordinator: BaseCoordinator {
 
-    private let router: Router
-    private let resolver: Resolver
-
-    var mainCoordinator: MainCoordinator?
-
-    init(router: Router, resolver: Resolver) {
-        self.router = router
-        self.resolver = resolver
-    }
+    var router: Router!
+    var resolver: Resolver!
 
     override func start() {
-        showMainFlow()
+        showMainCoordinator()
     }
 }
 
 private extension ApplicationCoordinator {
 
-    func showMainFlow() {
-        mainCoordinator = resolver.resolve(MainCoordinator.self, argument: router)
-        guard let coordinator = mainCoordinator else { return }
-        addDependency(coordinator)
-        coordinator.start()
+    func showMainCoordinator() {
+        guard let mainCoordinator = resolver.resolve(MainCoordinator.self, argument: router) else { return }
+        addDependency(mainCoordinator)
+        mainCoordinator.start()
     }
 }

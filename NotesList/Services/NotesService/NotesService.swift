@@ -9,6 +9,7 @@ import Foundation
 
 protocol NotesService {
     func fetchNotes(completionHandler: @escaping (Result<Bool, Error>) -> Void)
+    func deleteNote(at indexPath: IndexPath, completionHandler: @escaping (Result<Bool, Error>) -> Void)
     func numberOfNotes() -> Int
     func getNotes() -> [NotesViewModelType]
 }

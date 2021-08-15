@@ -10,7 +10,7 @@ import Swinject
 
 final class MainCoordinatorAssembly: Assembly {
     func assemble(container: Container) {
-        container.register(MainCoordinator.self) { (resolver, router: Router) in
+        container.register(MainCoordinator.self) { (resolver, router: Router!) in
             let coordinator = MainCoordinator()
             coordinator.resolver = resolver
             coordinator.router = router

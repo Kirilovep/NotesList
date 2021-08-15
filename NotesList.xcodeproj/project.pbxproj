@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0A5A8083F56F00CAAB0607C8 /* Pods_NotesList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45F538AC796301B3C70B8E5 /* Pods_NotesList.framework */; };
+		A6654C3A26C9300F00C6622E /* CustomEmptyDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6654C3926C9300F00C6622E /* CustomEmptyDataView.xib */; };
+		A6654C3F26C9302700C6622E /* CustomEmptyDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6654C3E26C9302700C6622E /* CustomEmptyDataView.swift */; };
 		A6D852B326C5ACA700669F29 /* DateFormatterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D852B226C5ACA700669F29 /* DateFormatterHelper.swift */; };
 		A6D852B726C5B2BE00669F29 /* NotesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D852B626C5B2BE00669F29 /* NotesService.swift */; };
 		A6D852BD26C5B2CB00669F29 /* NotesServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D852BC26C5B2CB00669F29 /* NotesServiceImp.swift */; };
@@ -88,6 +90,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A6654C3926C9300F00C6622E /* CustomEmptyDataView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomEmptyDataView.xib; sourceTree = "<group>"; };
+		A6654C3E26C9302700C6622E /* CustomEmptyDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEmptyDataView.swift; sourceTree = "<group>"; };
 		A6D852B226C5ACA700669F29 /* DateFormatterHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterHelper.swift; sourceTree = "<group>"; };
 		A6D852B626C5B2BE00669F29 /* NotesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesService.swift; sourceTree = "<group>"; };
 		A6D852BC26C5B2CB00669F29 /* NotesServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesServiceImp.swift; sourceTree = "<group>"; };
@@ -193,6 +197,24 @@
 				D45F538AC796301B3C70B8E5 /* Pods_NotesList.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6654C3726C9300100C6622E /* CustomAccessoryView */ = {
+			isa = PBXGroup;
+			children = (
+				A86FBC2426C511EA00E37BD0 /* CustomAccessoryView.swift */,
+				A86FBC2626C511FE00E37BD0 /* CustomAccessoryView.xib */,
+			);
+			path = CustomAccessoryView;
+			sourceTree = "<group>";
+		};
+		A6654C3C26C9301300C6622E /* CustomEmptyDataView */ = {
+			isa = PBXGroup;
+			children = (
+				A6654C3926C9300F00C6622E /* CustomEmptyDataView.xib */,
+				A6654C3E26C9302700C6622E /* CustomEmptyDataView.swift */,
+			);
+			path = CustomEmptyDataView;
 			sourceTree = "<group>";
 		};
 		A6D852B526C5B2B200669F29 /* NotesService */ = {
@@ -352,8 +374,8 @@
 		A86FBC2326C511B600E37BD0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A86FBC2426C511EA00E37BD0 /* CustomAccessoryView.swift */,
-				A86FBC2626C511FE00E37BD0 /* CustomAccessoryView.xib */,
+				A6654C3726C9300100C6622E /* CustomAccessoryView */,
+				A6654C3C26C9301300C6622E /* CustomEmptyDataView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -399,7 +421,6 @@
 				A878B4F926C3C37300BD74B0 /* Coordinator */,
 				A878B4F526C3C31600BD74B0 /* Application */,
 				A878B50D26C3C45F00BD74B0 /* Modules */,
-				A878B4F626C3C32600BD74B0 /* Storyboards */,
 				A878B4E726C3B93600BD74B0 /* Assets.xcassets */,
 				A878B4EC26C3B93600BD74B0 /* Info.plist */,
 				A878B4F326C3BFE200BD74B0 /* GoogleService-Info.plist */,
@@ -410,19 +431,20 @@
 		A878B4F526C3C31600BD74B0 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				A878B4F626C3C32600BD74B0 /* LaunchScreen */,
 				A878B4DE26C3B93500BD74B0 /* AppDelegate.swift */,
 				A878B4E026C3B93500BD74B0 /* SceneDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
 		};
-		A878B4F626C3C32600BD74B0 /* Storyboards */ = {
+		A878B4F626C3C32600BD74B0 /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
 				A878B4E426C3B93500BD74B0 /* Main.storyboard */,
 				A878B4E926C3B93600BD74B0 /* LaunchScreen.storyboard */,
 			);
-			path = Storyboards;
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 		A878B4F926C3C37300BD74B0 /* Coordinator */ = {
@@ -792,6 +814,7 @@
 				A6EB185526C4653000336BC6 /* NotesAddViewController.storyboard in Resources */,
 				A878B52A26C3C7B000BD74B0 /* RegistrationViewController.storyboard in Resources */,
 				A878B4F426C3BFE300BD74B0 /* GoogleService-Info.plist in Resources */,
+				A6654C3A26C9300F00C6622E /* CustomEmptyDataView.xib in Resources */,
 				A878B4E826C3B93600BD74B0 /* Assets.xcassets in Resources */,
 				A878B55626C402B000BD74B0 /* LoginViewController.storyboard in Resources */,
 				A878B4E626C3B93500BD74B0 /* Main.storyboard in Resources */,
@@ -851,7 +874,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\n";
+			shellScript = "
+";
 		};
 		F5D02946B057D4641896DE54 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -886,6 +910,7 @@
 				A878B51726C3C55D00BD74B0 /* Extensions+String.swift in Sources */,
 				A878B55E26C4039100BD74B0 /* LoginViewModel.swift in Sources */,
 				A891E7EC26C52CA7007A0662 /* NotesDataType.swift in Sources */,
+				A6654C3F26C9302700C6622E /* CustomEmptyDataView.swift in Sources */,
 				A878B56026C4039900BD74B0 /* LoginViewModelImp.swift in Sources */,
 				A6EB185B26C465A100336BC6 /* NotesAddViewModel.swift in Sources */,
 				A6EB183426C457A400336BC6 /* NotesCoordinator.swift in Sources */,
